@@ -1,0 +1,466 @@
+<html>
+    <head>
+        <title>G.A. Entrerprise</title>
+        <!-- Linea cosi mi ricordo dove e sta me-->
+        <style>
+            body {
+                background-color: black;
+            }
+            .collapsible {
+                color: black;
+                cursor: pointer;
+                width: 100%;
+                text-align: left;
+                border: none;
+                outline: none;
+                padding: 10px;
+            }
+            .roundc {
+                border-top-left-radius: 20px;
+                border-top-right-radius: 20px;
+            }
+            
+            .active, .collapsible:hover {
+                 background-color: #ccc;
+            }
+
+             .sh1:hover,  .sh1.active {
+                background-color: #06410a;
+            }
+
+            /* Ho perso 1h per capire come usare la griglia di css*/
+            .co_wrapper { /* Involucro*/
+                display: grid;
+                grid-template-rows: 0fr; /*Usato per far diventare il contenuto da 0 a 1*/
+                transition: grid-template-rows 0.2s ease-out;
+                background-color: #f1f1f1;
+                border-bottom-left-radius: 20px;
+                border-bottom-right-radius: 20px;
+                overflow: hidden;
+            }
+
+            
+
+            .collapsible.active + .co_wrapper {
+                grid-template-rows: 1fr;
+            }
+
+
+            .co_in { /* contenuto */
+                min-height: 0; 
+                padding: 0 18px; /* Usato per non farlo attaccato al bordo*/
+                color: black; 
+            }
+
+            .co_wrapper .co_wrapper { /*Involucro dentro involucro*/
+                border-radius: 0;
+                background-color: #e2e2e2;
+            }
+            .co_wrapper .co_wrapper.sh { /*Involucro dentro involucro*/
+                border-radius: 0;
+                background-color: #0a7211;
+            }
+            
+
+
+            h1{
+                text-align: center;
+                color: green;
+                font-size: 250%;
+            }
+            * {
+                font-family: 'Courier New';
+            }
+            .container {
+                display: flex;
+                border: 2px solid black;
+            }
+            .box {
+                flex: 1;
+                margin: 15px;
+                padding: 40px;
+            }
+            a { color: black; }
+            a:hover { color: green; }
+        </style>
+
+
+    </head>
+    <body>
+        <h1>High Value Assets stolen from the <br> foundation </h1>
+        <p style="color: white; text-align: center;">Tutti gli asset sono stati estratti da G.A. con l'intendo di essere divulgati a tutti i membri della W.L.</p>
+        <hr style="border: 1px solid #222; margin: 40px 0;">
+        
+        
+        
+
+        <div class="container">
+            <div class="box">
+                <button type="button" class="collapsible roundc"><a href="https://scp-wiki.wikidot.com/security-clearance-levels">Livelli di autorizzazione</a></button>
+                <div class="co_wrapper">
+                    <div class="co_in">
+                        <div style="padding: 10px 0;">
+                            <button type="button" class="collapsible"><strong>Livello di autorizzazione 1</strong></button>
+                            <div class="co_wrapper">
+                                <div class="co_in">
+                                    <p>Le autorizzazioni di Livello 1 sono assegnate al personale che lavora in prossimità con oggetti o entità anomale in contenimento senza però avere accesso diretto, indiretto o informativo con essi. L'autorizzazione di Livello 1 viene solitamente assegnata a: personale operante in posizioni amministrative, logistiche e di manutenzione all'interno di infrastrutture aventi capacità di contenimento o che devono trattare dati sensibili.</p>
+                                </div>
+                            </div>
+                            
+                            <button type="button" class="collapsible"><strong>Livello di autorizzazione 2</strong></button>
+                            <div class="co_wrapper">
+                                <div class="co_in">
+                                    <p>Le autorizzazioni di Livello 2 sono assegnate al personale che ha diretto accesso a dati riguardanti oggetti o entità anomale in contenimento. L'autorizzazione di Livello 2 viene solitamente assegnata a: staff di ricerca, agenti sul campo e specialisti nel contenimento.</p>
+                                </div>
+                            </div>
+
+                            <button type="button" class="collapsible"><strong>Livello di autorizzazione 3</strong></button>
+                            <div class="co_wrapper">
+                                <div class="co_in">
+                                    <p>Le autorizzazioni di Livello 3 sono assegnate al personale che ha necessità di accesso a dati accurati riguardanti la provenienza, le circostanze di recupero e la pianificazione a lungo termine di oggetti o entità anomale in contenimento. L'autorizzazione di Livello 3 viene solitamente assegnata a: staff d'elite di ricerca, manager di ricerca, responsabili della sicurezza e membri delle Squadre Speciali Mobili.</p>
+                                </div>
+                            </div>
+
+                            <button type="button" class="collapsible"><strong>Livello di autorizzazione 4</strong></button>
+                            <div class="co_wrapper">
+                                <div class="co_in">
+                                    <p>Le autorizzazioni di Livello 4 sono assegnate all'amministrazione superiore che necessita dell'accesso a informazioni regionali e a dati strategici a lungo termine riguardanti le operazioni e le ricerche della Fondazione. L'autorizzazione di Livello 4 viene assegnata esclusivamente a: Direttori del Sito, Direttori della Sicurezza e Comandanti delle Squadre Speciali Mobili.</p>
+                                </div>
+                            </div>
+
+                            <button type="button" class="collapsible"><strong>Livello di autorizzazione 5</strong></button>
+                            <div class="co_wrapper">
+                                <div class="co_in">
+                                    <p>Le autorizzazioni di Livello 5 sono assegnate esclusivamente al personale amministrativo di rango massimo e garantiscono l'accesso illimitato a tutti i dati strategici e sensitivi in possesso della Fondazione. Le autorizzazioni di Livello 5 sono garantite solamente ai membri del Consiglio O5.</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <button type="button" class="collapsible roundc"><a href="http://scp-wiki.wikidot.com/security-clearance-levels#toc7">Classifica del personale</a></button>
+                <div class="co_wrapper">
+                    <div class="co_in">
+                        <div style="padding: 10px 0;">                         
+                            <button type="button" class="collapsible"><strong>Classe A</strong></button>
+                            <div class="co_wrapper">
+                                <div class="co_in">
+                                    <p>Il personale di Classe A viene ritenuto essenziale per le operazioni strategiche della Fondazione, e non può essere autorizzato all'accesso diretto ad anomalie in nessuna circostanza. Quando viene richiesto al personale di Classe A di essere in prossimità diretta con un'anomalia (come nel caso di infrastrutture contenenti unità di contenimento), al personale di Classe A non è autorizzato l'accesso in aree dell'infrastruttura contenenti anomalie e devono essere continuamente tenuti in aree sicure. In caso di emergenza, il personale di Classe A deve essere immediatamente evacuato e designato ad aree sicure all'esterno del sito. I membri del Consiglio O5 sono sempre personale di Classe A.</p>
+                                </div>
+                            </div>
+
+                            <button type="button" class="collapsible"><strong>Classe B</strong></button>
+                            <div class="co_wrapper">
+                                <div class="co_in">
+                                    <p>Il personale di Classe B viene ritenuto essenziale per le operazioni locali della Fondazione, e può essere autorizzato all'accesso solamente ad anomalie che hanno superato il periodo di quarantena e che sono state private di qualunque potenziale effetto di influenza mentale o di agenti memetici. Nell'evento di una breccia nel contenimento o di un'azione ostile nei confronti di una infrastruttura della Fondazione, il personale di Classe B deve essere evacuato e designato ad aree sicure all'esterno del sito il più presto possibile.</p>
+                                </div>
+                            </div>
+
+                            <button type="button" class="collapsible"><strong>Classe C</strong></button>
+                            <div class="co_wrapper">
+                                <div class="co_in">
+                                    <p>Il personale di Classe C ha accesso diretto alla gran parte delle anomalie non considerate necessariamente ostili o pericolose. Il personale di Classe C che ha avuto con potenziali effetti di influenza mentale o proprietà memetiche sarà sottoposto a quarantena obbligatoria e a valutazione psichiatrica se ritenuto necessario dal personale di sicurezza. Nell'evento di una breccia nel contenimento o di un'azione ostile nei confronti di una infrastruttura della Fondazione, il personale di Classe C non in combattimento sono da riportare in aree di sicurezza, o eventualmente da evacuare a discrezione del personale di sicurezza presente nel sito in caso di una breccia che comprende tutto il sito o di un altro tipo di evento catastrofico.</p>
+                                </div>
+                            </div>
+
+                            <button type="button" class="collapsible"><strong>Classe D</strong></button>
+                            <div class="co_wrapper">
+                                <div class="co_in">
+                                    <p>Il personale di Classe D è personale sacrificabile utilizzato per trattare con anomalie estremamente pericolose e non è autorizzato a venire in contatto con il personale di Classe A o Classe B. Il personale di Classe D viene solitamente prelevato da detenuti condannati per crimini violenti, soprattutto quelli condannati alla pena di morte. In tempi di costrizione, può essere promulgato il Protocollo 12, che autorizza il reclutamento da altre fonti — come prigionieri politici, popolazioni rifugiate ed altre fonti civili — che possono essere trasferiti sotto la custodia della Fondazione sotto circostanze plausibilmente negabili. Il personale di Classe D deve essere assegnato a regolari valutazioni psichiatriche e deve essere amministrato con un amnestico di (almeno) Classe B o terminato alla fine del mese a discrezione della staff medico e/o di sicurezza alla fine del mese. Nel caso di un evento catastrofico nel sito, il personale di Classe D deve essere immediatamente terminato almeno che venga ritenuto necessario dal personale di sicurezza presente nel sito risparmiare il Personale.</p>
+                                </div>
+                            </div>
+
+                            <button type="button" class="collapsible"><strong>Classe E</strong></button>
+                            <div class="co_wrapper">
+                                <div class="co_in">
+                                    <p>La Classe E è una classificazione provvisoria assegnata agli agenti sul campo e al personale di contenimento rimasto esposto a effetti potenzialmente pericolosi durante lo stabilire di un contenimento iniziale ad una anomalia recentemente designata. Il personale di Classe E va assegnato alla quarantina appena possibile, e monitorati per osservare cambiamenti nel comportamento, personalità o fisiologia ritenuti potenzialmente pericolosi, e possono ritornare a lavorare solo dopo essere stati interrogati e ritenuti "guariti" dallo staff medico e psichiatrico.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="box">
+                <button type="button" class="collapsible roundc"><a href="http://scp-wiki.wikidot.com/task-forces">Mobile Task Forces</a></button>
+                <div class="co_wrapper">
+                    <div class="co_in">
+                        <div style="padding: 10px 0;"> 
+                               
+                            <button type="button" class="collapsible"><strong>α-1  | Red Right Hand</strong></button>
+                            <div class="co_wrapper">
+                                <div class="co_in">
+                                    <p>La Squadra Speciale Mobile Alfa-1 è una squadra speciale subordinata direttamente al Comando O5 ed è impiegata nelle operazioni che richiedono la sicurezza operativa più rigida. La squadra è composta dagli agenti operativi migliori e più fedeli alla Fondazione. Ogni ulteriore informazione riguardo alla SSM Alfa-1 è riservata al Livello 5.</p>
+                                </div>
+                            </div>
+
+                            <button type="button" class="collapsible"><strong>α-9  | Last Hope</strong></button>
+                            <div class="co_wrapper">
+                                <div class="co_in">
+                                    <p>La Squadra Speciale Mobile Alfa-9 è la rinata SSM Omega-7. È stata ideata con lo scopo specifico di allenare e schierare anomalie umanoidi sul campo.</p>
+                                </div>
+                            </div>
+
+                            <button type="button" class="collapsible"><strong>β-1  | Cauterizers</strong></button>
+                            <div class="co_wrapper">
+                                <div class="co_in">
+                                    <p>La Squadra Speciale Mobile Beta-1 è un'unità altamente classificata, specializzata nel gestire casi sospetti di infiltrazione nemica all'interno del personale della Fondazione e possibili fughe di informazioni verso altri Gruppi di Interesse.</p>
+                                </div>
+                            </div>
+
+                            <button type="button" class="collapsible"><strong>β-7  | Maz Hatters</strong></button>
+                            <div class="co_wrapper">
+                                <div class="co_in">
+                                    <p>La Squadra Speciale Mobile Beta-7 è specializzata nell'acquisizione e contenimento delle anomalie che esibiscono degli estremi rischi biologici, chimici o radiologici, così come nel rapido contenimento e pulizia delle aree affette da tali anomalie. Questo include la pianificazione e il dispiegamento di contingenze per il contenimento di malattie anomale o altri fenomeni contagiosi in un'area molto vasta, se non dalle proporzioni pandemiche.</p>
+                                </div>
+                            </div>
+
+                            <button type="button" class="collapsible"><strong>Δ-4  | Minuteman</strong></button>
+                            <div class="co_wrapper">
+                                <div class="co_in">
+                                    <p>La Squadra Speciale Mobile Delta-4 individua e acquisisce oggetti o informazioni anomale prima che ci arrivino i Gruppi di Interesse rivali. Operano nell'ombra per battere la concorrenza sul tempo.</p>
+                                </div>
+                            </div>
+
+                            <button type="button" class="collapsible"><strong>ε-11| Nine-Tailed Fox</strong></button>
+                            <div class="co_wrapper">
+                                <div class="co_in">
+                                    <p>La Squadra Speciale Mobile Epsilon-11 si occupa della sicurezza interna della Fondazione SCP, sotto la sovraintendenza della SSM Alfa-1. Essi sono una squadra per le operazioni speciali dispiegata nei Siti della Fondazione in cui i protocolli standard hanno fallito e in cui sono imminenti multiple brecce al contenimento. In quanto tali, la maggior parte delle loro operazioni sono classificate.</p>
+                                </div>
+                            </div>
+
+                            <button type="button" class="collapsible"><strong>K-10| Skynet</strong></button>
+                            <div class="co_wrapper">
+                                <div class="co_in">
+                                    <p>Squadra Speciale Mobile Kappa-10 è la designazione temporanea assegnata a tale squadra fino al proprio scioglimento o ufficializzazione. Essa è strettamente assegnata al compito di investigare ed affrontare le "cyber-anomalie" usando una combinazione di agenti virtuali e ricercatori della Fondazione per rintracciare, neutralizzare e/o contenere tali minacce intangibili.</p>
+                                </div>
+                            </div>                            
+
+                            <button type="button" class="collapsible"><strong>Λ-5  | White Rabbits</strong></button>
+                            <div class="co_wrapper">
+                                <div class="co_in">
+                                    <p>La Squadra Speciale Mobile Lambda-5 è specializzata nell'attraversamento di realtà instabili, surreali o controllate, e nel contenimento di persone e artefatti potenzialmente pericolose capaci di manipolare lo spazio ed il tempo.</p>
+                                </div>
+                            </div>
+
+                            <button type="button" class="collapsible"><strong>Nu-7| Hammer Down</strong></button>
+                            <div class="co_wrapper">
+                                <div class="co_in">
+                                    <p>La Squadra Speciale Armata Mobile Nu-7 consiste in un battaglione composto da tre elementi dalle dimensioni di una compagnia: forze di fanteria specializzate in operazioni speciali, una compagnia di veicoli leggeri corazzati, un plotone di carri armati, uno squadrone di elicotteri, un plotone chimico-biologico-radiologico-nucleare (CBRN), un plotone di ingegneri da combattimento, una squadra di specialisti in armamento nucleare (SAN), più del personale specializzato in altri campi e di supporto. La SSAM Nu-7 è primariamente appostata al di fuori dell'Area di Bio-Contenimento Armata 14 e ha il compito di rispondere agli incidenti che riguardano la perdita di contatto con una o più delle strutture chiave della Fondazione in sospette circostanze di breccia di contenimento in tutto il sito, compromissione nemica o altro evento catastrofico.</p>
+                                </div>
+                            </div>
+
+
+                            <button type="button" class="collapsible"><strong>Ω-1  | Law's Left Hand</strong></button>
+                            <div class="co_wrapper">
+                                <div class="co_in">
+                                    <p>La Squadra Speciale Mobile Omega-1 ha l'autorità di rimuovere o giustiziare membri del personale della Fondazione di alto livello, qualora venga accertato che stiano agendo in modo non etico. Risponde esclusivamente al Comitato Etico, fungendo da controparte alla "Mano Destra Rossa" del Comando O5.</p>
+                                </div>
+                            </div>
+
+                            <button type="button" class="collapsible"><strong>Σ-66| Sixteen Tons </strong></button>
+                            <div class="co_wrapper">
+                                <div class="co_in">
+                                    <p>La Squadra Speciale Mobile Sigma-66 è formata da membri catturati da altri GdI. Nonostante la mancanza di lealtà verso la Fondazione, si tiene in alto valore l'esperienza del gruppo.</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>  
+        </div>
+        
+    <div class="container">
+            <div class="box">
+                <button type="button" class="collapsible roundc">Nemici della fondazione</button>
+                <div class="co_wrapper">
+                    <div class="co_in">
+                        <div style="padding: 10px 0;">
+
+
+                            <button type="button" class="collapsible"><a href="https://scp-wiki.wikidot.com/chaos-insurgency-hub"><strong>The Chaos Insurgency <br> -The Mad Blasphemers</a></strong></button>
+                            <div class="co_wrapper">
+                                <div class="co_in">
+                                    <p>Dicono di combattere per la liberazione, ma non sono altro che un cancro nato dalla costola della Fondazione. L'Insorgenza guarda all'anomalo — alla nostra gente, alla nostra magia, alla nostra stessa storia — e vi vede solo armi da caricare, puntare e consumare. Non desiderano comprendere la Biblioteca del Viandante; vogliono saccheggiare i suoi tesori per dare fuoco al resto del mondo. Non sono guidati dall'illuminazione, ma dal disperato, sanguinoso desiderio di governare sulle ceneri del vecchio ordine. Non fidatevi delle loro promesse di rivoluzione. Spezzano l'anomalo per piegarlo alla loro volontà, proprio come farebbe un qualsiasi Carceriere.</p>
+                                </div>
+                            </div>
+
+                            <button type="button" class="collapsible"><a href="https://scp-wiki.wikidot.com/goc-hub-page"><strong>The Global Occult Coalition <br> -The Bookburners</strong></a></button>
+                            <div class="co_wrapper">
+                                <div class="co_in">
+                                    <p>I carnefici definitivi del soprannaturale. La GOC rappresenta l'apice dell'arroganza umana, nascosta dietro uno scudo di burocrazia e ipocrisia. Utilizzano strumenti anomali mentre portano avanti un sistematico genocidio contro la comunità anomala. Per loro, uno spirito senziente è una minaccia, un artefatto magico è un pericolo e una divinità antica e pacifica è solo un bersaglio per una squadra d'assalto. Non vogliono rinchiuderci nel buio: vogliono ridurci in cenere. Ogni volta che un membro della Coalizione spara un colpo, un pezzo della meraviglia dell'universo muore per sempre.</p>
+                                </div>
+                            </div>
+
+                            <button type="button" class="collapsible sh1"><a href="https://scp-wiki.wikidot.com/serpent-s-hand-hub"><strong>The Serpent's Hand <br> -The Keepers of the Library</strong></a></button>
+                            <div class="co_wrapper sh">
+                                <div class="co_in">
+                                    <p>Benvenuti. <br>
+A chiunque voglia o sia in grado di leggere questo: Questo è per voi.<br>
+Noi siamo la Mano del Serpente.<br>
+Siamo un movimento, uniti da una fede comune:<br>
+Che l'umanità e tutti gli altri popoli dei mondi conosciuti non meritino di essere tenuti nell'oscurità e nell'ignoranza.<br>
+La Mano del Serpente non si coordina come gruppo. Siamo un insieme disorganizzato di fazioni. I nostri nemici tendono a fraintendere questo aspetto — per esempio, l'ossessione della Fondazione per L.S., una persona che la maggior parte di noi non ha mai incontrato. O il Nido del Serpente, con le loro identità mutevoli. Sì, sono tutti leader, perché sono persone che rispettiamo, persone da cui accettiamo consigli, e alcuni di noi seguiranno i loro piani. Ma non sono la totalità di noi.<br>
+Non c'è un modo speciale per unirsi alla Mano. Non ci sono rituali segreti celebrati in scantinati o stanze chiuse. Non teniamo elezioni per i nostri leader. Se vuoi diventare un membro della Mano del Serpente, tutto ciò che devi fare è decidere di essere un membro della Mano del Serpente.<br>
+La maggior parte di noi è gente comune, anche se i nostri nemici non lo capiscono. Siamo persone comuni che accolgono l'anomalo, il soprannaturale, l'etereo. Ci opponiamo alla sua soppressione. Come potremmo fare altrimenti? I nostri amici, i membri delle nostre famiglie e, a volte, noi stessi cadiamo al di fuori dei confini della normalità. Ognuno di noi ha fatto esperienza dell'anomalo. Siamo le cose in cielo e in terra che non sono state sognate dalla vostra filosofia.<br>
+Per gli araldi del potere tradizionale come la Fondazione SCP, la Coalizione Occulta Globale e la maggior parte dei governi mondiali, l'anomalo è un veleno che si diffonde lentamente, minacciando di distruggere tutto ciò che la civiltà ha faticato tanto a creare.<br>
+Ma le persone anomale sono persone, e l'anomalo in sé non è una minaccia per il solo fatto di esistere. Sì, presenta dei pericoli, ma lo fanno anche i germi, le meteore e gli incendi boschivi. Sopprimere la conoscenza di qualcosa non farà che renderla più pericolosa, e costringerà tutti noi a rimanere rannicchiati, spaventati, al buio.<br>
+Quando la normalità inizia a ferire le persone che devono vivere sotto di essa, nel tentativo di curare un "veleno", la normalità stessa diventa il veleno.<br>
+La Fondazione SCP e la Coalizione Occulta Globale stanno recitando ora lo stesso ruolo che la Chiesa Cattolica recitò quando imprigionò Galileo per aver scoperto che il mondo girava intorno al sole. Le loro pratiche e le loro credenze sono la morte della conoscenza, la morte della scienza, la morte della luce.<br>
+Prendete come esempio la Biblioteca dei Viandanti, il luogo in cui la Mano del Serpente stabilisce la sua dimora. La Biblioteca è il più grande archivio di conoscenza che i mondi abbiano mai visto, il Santo Graal per coloro che cercano di comprendere il preternaturale. Eppure, sia la Fondazione SCP che la Coalizione Occulta Globale sono state cacciate da questo luogo che accoglie tutti. Perché? Perché hanno cercato di distruggerlo, o di prenderlo per sé affinché nessun altro potesse averlo. A causa di ciò, sono condannate a vagare alla cieca nel buio.<br>
+Chiunque sia ragionevole concorda sul fatto che le persone debbano difendersi dalle minacce soprannaturali. Ma come potete proteggervi se bruciate e seppellite i libri e imprigionate o giustiziate le persone che potrebbero dirvi come fare? Cerchereste di proteggervi dalle armi nucleari dicendo a tutti di far finta che non esistano?<br>
+Anche alla Mano del Serpente fu vietato l'accesso alla Biblioteca, un tempo. C'era un motivo per cui non abbiamo potuto riscoprirla fino del 1967. Ma non più. Abbiamo imparato dai nostri errori.<br>
+A tutti i membri della COG e della Fondazione che potrebbero leggere questo:<br>
+Stiamo crescendo così tanto a causa vostra. Un tempo eravamo più simili a voi, solo l'ennesima società segreta endogamica che accumulava conoscenza occulta per se stessa.<br>
+Poi la Fondazione ha iniziato a espandere la propria scala. Ci sono sempre stati i Carcerieri, ma non così, non da millenni. Eppure, continuavano a tenersi nell'oscurità, con i soli leader a conoscenza della reale portata del mondo sulla Terra al di fuori della quotidianità. Quindi erano tollerabili, per un certo periodo.<br>
+Ma poi arrivò la Settima Guerra Occulta, la Guerra Civile della Fondazione. L'ascesa della Coalizione Occulta Globale — i Brucialibri, il Grande Fratello — e la campagna su vasta scala contro la comunità paranaturale che ne seguì. La Coalizione divenne il rifugio oppressivo in cui fuggirono i codardi della comunità paranaturale. Un peccato che ci fossero solo 108 posti, e solo per organizzazioni a dominanza umana. O forse non è affatto un peccato. Il nostro vecchio io non cercò di farne parte allora, e siamo fortunati per questo.<br>
+Così la Mano del Serpente insorse. Non per desiderio, né per paura, ma per un bisogno chiaro e pressante. Per evitare che tutti i popoli venissero incatenati per sempre nell'oscurità.<br>
+Noi, la Mano del Serpente, chiediamo a entrambi questo:<br>
+Quanti KTE cataloga la Coalizione Occulta Globale? Deve sembrare che il soprannaturale sia una vasta idra — due nuove teste spuntano per ognuna che viene tagliata. Per quanto tempo continuerete a tagliare?<br>
+Quanti oggetti SCP contiene la Fondazione ora? Duemila? Tremila? Cinquemila? Di più? Quanto tempo passerà prima che non ci sia più spazio per costruire prigioni? Metterete il mondo intero in una cella di contenimento?<br>
+Ve lo ammettete da soli, in privato. L'anomalo è in aumento. Non potete trattenere il futuro per sempre.<br>
+Voi siete i mostri di cui avete così tanta paura. Lasciate andare la vostra paura e unitevi a noi nella luce.<br>
+E se non lo farete... se continuerete a imprigionare e uccidere innocenti, se continuerete a costringere il mondo a rimanere al buio... allora andrete incontro al destino di tutti gli schiavisti e gli assassini della storia del mondo prima di voi.<br>
+Libereremo coloro che tenete imprigionati. Salveremo coloro che cercate di uccidere.<br>
+Il Giardino è il posto del Serpente.<br>
+Noi siamo la Mano del Serpente.<br>
+~ M</p>
+                                </div>
+                            </div>
+
+                            <button type="button" class="collapsible"><a href="https://scp-wiki.wikidot.com/church-of-the-broken-god-hub"><strong>The Church of The Broken God  <br> -The Machine Zealots</strong></a></button>
+                            <div class="co_wrapper">
+                                <div class="co_in">
+                                    <p>Guardiamo i MEKHANIti con una miscela di pietà e cautela. Possiedono un pezzo importante del puzzle: hanno capito che l'universo è frammentato e deve essere ricomposto. Tuttavia, la loro ossessione per l'ottone freddo, la logica rigida e gli ingranaggi di ferro li acceca di fronte alla magia viva e fluida del cosmo. Nella loro missione per ricostruire la propria divinità a orologeria, spesso dimenticano il valore dell'anima, cercando di sostituire la carne e lo spirito con metallo inflessibile. Non sono i nostri peggiori nemici, ma la loro crociata meccanica rischia di intrappolare l'universo in una gabbia deterministica creata da loro stessi.</p>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        <div class="box">
+                <button type="button" class="collapsible roundc"><a href="https://fondazionescp.wikidot.com/object-classes">Classifica dei prigionieri</a></button>
+                <div class="co_wrapper">
+                    <div class="co_in">
+                        <div style="padding: 10px 0;">                         
+                            <button type="button" class="collapsible"><strong>Safe</strong></button>
+                            <div class="co_wrapper">
+                                <div class="co_in">
+                                    <p>Gli SCP di classe Safe sono anomalie contenibili in modo facile e sicuro, questo è spesso dovuto al fatto che la Fondazione ha studiato abbastanza bene l'SCP tanto che il contenimento non richieda risorse significative o che le anomalie abbiano bisogno di un'attivazione o una causa scatenante conscia e specifica. Classificare un SCP come Safe, comunque, non significa che maneggiarlo o attivarlo non rappresenti un pericolo.</p>
+                                </div>
+                            </div>
+
+                            <button type="button" class="collapsible"><strong>Euclid</strong></button>
+                            <div class="co_wrapper">
+                                <div class="co_in">
+                                    <p>Gli SCP di classe Euclid sono anomalie che richiedono più risorse per essere contenute completamente o dove il contenimento non è sempre affidabile, solitamente poiché l'SCP non è stato compreso in maniera sufficiente o è imprevedibile di per sé. Euclid è la Classe dell'Oggetto con il più alto campo d'applicazione ed è di solito quasi certo che un SCP avrà questa classe se non rientra facilmente all'interno di altre Classi degli Oggetti standard. <br> Come nota, ogni SCP che sia autonomo, senziente e/o sapiente è generalmente classificato come Euclid a causa dell'insinta imprevedibilità di un oggetto che può agire e pensare autonomamente.</p>
+                                </div>
+                            </div>
+
+                            <button type="button" class="collapsible"><strong>Keter</strong></button>
+                            <div class="co_wrapper">
+                                <div class="co_in">
+                                    <p>Gli SCP di classe Keter sono anomalie estremamente difficili da contenere costantemente o in modo affidabile, con procedure di contenimento che molto spesso sono estese e complesse. Spesso la Fondazione non può contenere bene questi SCP a causa del fatto che non possieda una comprensione solida dell'anomalia o che non abbia la tecnologia per contenerlo o contrastarlo a dovere. Un SCP Keter non significa che sia pericoloso, solo che contenerlo è semplicemente molto difficile o dispendioso.</p>
+                                </div>
+                            </div>
+
+                            <button type="button" class="collapsible"><strong>Thaumiel</strong></button>
+                            <div class="co_wrapper">
+                                <div class="co_in">
+                                    <p>Gli SCP di classe Thaumiel sono anomalie che la Fondazione usa in maniera specifica per contenere altri SCP. Anche la semplice esistenza degli elementi di classe Thaumiel è classificata ai più alti livelli della Fondazione e le loro posizioni, funzioni e stato attuale sono noti a pochi membri del personale della Fondazione al di fuori del Consiglio O5.</p>
+                                </div>
+                            </div>
+
+                            <button type="button" class="collapsible"><strong>Neutralizzato</strong></button>
+                            <div class="co_wrapper">
+                                <div class="co_in">
+                                    <p>Gli SCP neutralizzati sono anomalie che non sono più anomale, mediante la distruzione o la siabilitazione intenzionalmente o accidentalmente.</p>
+                                </div>
+                            </div>
+
+                            <button type="button" class="collapsible"><strong>Apollyon</strong></button>
+                            <div class="co_wrapper">
+                                <div class="co_in">
+                                    <p>Gli SCP di classe Apollyon sono anomalie che non possono essere contenute, violeranno imminentemente il contenimento o prenderanno parte a uno scenario simile. Tali anomalie sono solitamente associate con minacce da fine del mondo o Scenari di Classe K simili e richiedono un grande sforzo di contenimento da parte della Fondazione</p>
+                                </div>
+                            </div>
+
+                            <button type="button" class="collapsible"><strong>Archon</strong></button>
+                            <div class="co_wrapper">
+                                <div class="co_in">
+                                    <p>Gli SCP di classe Archon sono anomalie che potrebbero essere teoricamente contenute, ma sono lasciate non contenute per vari motivi. Gli SCP Archon possono essere parte della realtà non-anomala difficile da contenere, o che potrebbero rivelarsi avversi in contenimento. Questi SCP non sono incontenibili — la qualità stessa della classe è che la Fondazione sceglie di non contenere l'anomalia.</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+                    <div class="box">
+                <button type="button" class="collapsible roundc"><a href="https://scp-wiki.wikidot.com/scp-series">SCP</a></button>
+                <div class="co_wrapper">
+                    <div class="co_in">
+                        <div style="padding: 10px 0;"> 
+                               Elenco della prima serie di SCP.
+                        </div>
+                    </div>
+                </div>
+            </div>  
+        </div>
+    
+    <br>
+    <br>
+    <p style="text-align: center;">
+    <a href="https://scp-wiki.wikidot.com/o5-command-dossier" >High Value Targets</a>
+    </p>
+    
+    
+    
+    
+    
+    
+    </body>
+    <!--  <script>
+        Script originale il quale non apriva collapsable all interno di altri collapsable a causa di max height = null, 
+        e paragraph non vuole contenere piu di un button, figlio di 
+   
+        <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+
+        for (i = 0; i < coll.length; i++) {
+          coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.maxHeight){
+              content.style.maxHeight = null;
+            } else {
+              content.style.maxHeight = content.scrollHeight + "px";
+           }
+          });
+        }
+        </script>
+
+ }-->
+        <script>
+        //Codice rifatto cosi CSS fa tutto il lavoro e non mi rompo :D
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+
+        for (i = 0; i < coll.length; i++) {
+          coll[i].addEventListener("click", function(e) {
+            e.stopPropagation(); 
+            this.classList.toggle("active");
+          });
+        }
+        </script>
+
+
+</html>

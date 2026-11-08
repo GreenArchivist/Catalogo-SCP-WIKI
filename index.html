@@ -14,14 +14,23 @@
                 border: none;
                 outline: none;
                 padding: 10px;
+                border-radius: 20px;
+                transition: border-bottom-left-radius 0s linear 0.3s, border-bottom-right-radius 0s linear 0.3s;
+                
+                
             }
-            .roundc {
-                border-top-left-radius: 20px;
-                border-top-right-radius: 20px;
+            .collapsible.active {
+                 border-bottom-left-radius: 0px;
+                border-bottom-right-radius: 0px;
+
+                transition: border-bottom-left-radius 0s linear 0s, 
+                border-bottom-right-radius 0s linear 0s; 
             }
             
+
+            
             .active, .collapsible:hover {
-                 background-color: #ccc;
+                background-color: #ccc;
             }
 
              .sh1:hover,  .sh1.active {
@@ -32,7 +41,7 @@
             .co_wrapper { /* Involucro*/
                 display: grid;
                 grid-template-rows: 0fr; /*Usato per far diventare il contenuto da 0 a 1*/
-                transition: grid-template-rows 0.2s ease-out;
+                transition: grid-template-rows 0.3s ease-out;
                 background-color: #f1f1f1;
                 border-bottom-left-radius: 20px;
                 border-bottom-right-radius: 20px;
@@ -43,6 +52,7 @@
 
             .collapsible.active + .co_wrapper {
                 grid-template-rows: 1fr;
+
             }
 
 
@@ -96,7 +106,7 @@
 
         <div class="container">
             <div class="box">
-                <button type="button" class="collapsible roundc"><a href="https://scp-wiki.wikidot.com/security-clearance-levels">Livelli di autorizzazione</a></button>
+                <button type="button" class="collapsible"><a href="https://scp-wiki.wikidot.com/security-clearance-levels">Livelli di autorizzazione</a></button>
                 <div class="co_wrapper">
                     <div class="co_in">
                         <div style="padding: 10px 0;">
@@ -141,7 +151,7 @@
             </div>
 
             <div class="box">
-                <button type="button" class="collapsible roundc"><a href="http://scp-wiki.wikidot.com/security-clearance-levels#toc7">Classifica del personale</a></button>
+                <button type="button" class="collapsible"><a href="http://scp-wiki.wikidot.com/security-clearance-levels#toc7">Classifica del personale</a></button>
                 <div class="co_wrapper">
                     <div class="co_in">
                         <div style="padding: 10px 0;">                         
@@ -185,7 +195,7 @@
             </div>
             
             <div class="box">
-                <button type="button" class="collapsible roundc"><a href="http://scp-wiki.wikidot.com/task-forces">Mobile Task Forces</a></button>
+                <button type="button" class="collapsible"><a href="http://scp-wiki.wikidot.com/task-forces">Mobile Task Forces</a></button>
                 <div class="co_wrapper">
                     <div class="co_in">
                         <div style="padding: 10px 0;"> 
@@ -276,7 +286,7 @@
         
     <div class="container">
             <div class="box">
-                <button type="button" class="collapsible roundc">Nemici della fondazione</button>
+                <button type="button" class="collapsible">Nemici della fondazione</button>
                 <div class="co_wrapper">
                     <div class="co_in">
                         <div style="padding: 10px 0;">

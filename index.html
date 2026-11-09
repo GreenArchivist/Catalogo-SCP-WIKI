@@ -1,443 +1,1371 @@
 <html>
-    <head>
-        <title>G.A. Entrerprise</title>
-        <!-- Linea cosi mi ricordo dove e sta me-->
-        <style>
-            body {
-                background-color: black;
-            }
-            .collapsible {
-                color: black;
-                cursor: pointer;
-                width: 100%;
-                text-align: left;
-                border: none;
-                outline: none;
-                padding: 10px;
-                border-radius: 20px;
-                transition: border-bottom-left-radius 0s linear 0.3s, border-bottom-right-radius 0s linear 0.3s;
-                
-                
-            }
-            .collapsible.active {
-                 border-bottom-left-radius: 0px;
-                border-bottom-right-radius: 0px;
 
-                transition: border-bottom-left-radius 0s linear 0s, 
-                border-bottom-right-radius 0s linear 0s; 
-            }
-            
+<head>
+    <title>G.A. Entrerprise</title>
+    <!-- Linea cosi mi ricordo dove e sta me-->
+    <style>
+        body {
+            background-color: black;
+        }
 
-            
-            .active, .collapsible:hover {
-                background-color: #ccc;
-            }
-
-             .sh1:hover,  .sh1.active {
-                background-color: #06410a;
-            }
-
-            /* Ho perso 1h per capire come usare la griglia di css*/
-            .co_wrapper { /* Involucro*/
-                display: grid;
-                grid-template-rows: 0fr; /*Usato per far diventare il contenuto da 0 a 1*/
-                transition: grid-template-rows 0.3s ease-out;
-                background-color: #f1f1f1;
-                border-bottom-left-radius: 20px;
-                border-bottom-right-radius: 20px;
-                overflow: hidden;
-            }
-
-            
-
-            .collapsible.active + .co_wrapper {
-                grid-template-rows: 1fr;
-
-            }
+        .collapsible {
+            color: black;
+            cursor: pointer;
+            width: 100%;
+            text-align: left;
+            border: none;
+            outline: none;
+            padding: 10px;
+            border-radius: 20px;
+            transition: border-bottom-left-radius 0s linear 0.3s, border-bottom-right-radius 0s linear 0.3s;
 
 
-            .co_in { /* contenuto */
-                min-height: 0; 
-                padding: 0 18px; /* Usato per non farlo attaccato al bordo*/
-                color: black; 
-            }
+        }
 
-            .co_wrapper .co_wrapper { /*Involucro dentro involucro*/
-                border-radius: 0;
-                background-color: #e2e2e2;
-            }
-            .co_wrapper .co_wrapper.sh { /*Involucro dentro involucro*/
-                border-radius: 0;
-                background-color: #0a7211;
-            }
-            
+        .collapsible.active {
+            border-bottom-left-radius: 0px;
+            border-bottom-right-radius: 0px;
+
+            transition: border-bottom-left-radius 0s linear 0s,
+                border-bottom-right-radius 0s linear 0s;
+        }
 
 
-            h1{
-                text-align: center;
-                color: green;
-                font-size: 250%;
-            }
-            * {
-                font-family: 'Courier New';
-            }
-            .container {
-                display: flex;
-                border: 2px solid black;
-            }
-            .box {
-                flex: 1;
-                margin: 15px;
-                padding: 40px;
-            }
-            a { color: black; }
-            a:hover { color: green; }
-        </style>
+
+        .active,
+        .collapsible:hover {
+            background-color: #ccc;
+        }
+
+        .sh1:hover,
+        .sh1.active {
+            background-color: #06410a;
+        }
+
+        /* Ho perso 1h per capire come usare la griglia di css*/
+        .co_wrapper {
+            /* Involucro*/
+            display: grid;
+            grid-template-rows: 0fr;
+            /*Usato per far diventare il contenuto da 0 a 1*/
+            transition: grid-template-rows 0.3s ease-out;
+            background-color: #f1f1f1;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+            overflow: hidden;
+
+        }
 
 
-    </head>
-    <body>
-        <h1>High Value Assets stolen from the <br> foundation </h1>
-        <p style="color: white; text-align: center;">Tutti gli asset sono stati estratti da G.A. con l'intendo di essere divulgati a tutti i membri della W.L.</p>
-        <hr style="border: 1px solid #222; margin: 40px 0;">
-        
-        
-        
 
-        <div class="container">
-            <div class="box">
-                <button type="button" class="collapsible"><a href="https://scp-wiki.wikidot.com/security-clearance-levels">Livelli di autorizzazione</a></button>
-                <div class="co_wrapper">
-                    <div class="co_in">
-                        <div style="padding: 10px 0;">
-                            <button type="button" class="collapsible"><strong>Livello di autorizzazione 1</strong></button>
-                            <div class="co_wrapper">
-                                <div class="co_in">
-                                    <p>Le autorizzazioni di Livello 1 sono assegnate al personale che lavora in prossimità con oggetti o entità anomale in contenimento senza però avere accesso diretto, indiretto o informativo con essi. L'autorizzazione di Livello 1 viene solitamente assegnata a: personale operante in posizioni amministrative, logistiche e di manutenzione all'interno di infrastrutture aventi capacità di contenimento o che devono trattare dati sensibili.</p>
-                                </div>
-                            </div>
-                            
-                            <button type="button" class="collapsible"><strong>Livello di autorizzazione 2</strong></button>
-                            <div class="co_wrapper">
-                                <div class="co_in">
-                                    <p>Le autorizzazioni di Livello 2 sono assegnate al personale che ha diretto accesso a dati riguardanti oggetti o entità anomale in contenimento. L'autorizzazione di Livello 2 viene solitamente assegnata a: staff di ricerca, agenti sul campo e specialisti nel contenimento.</p>
-                                </div>
-                            </div>
+        .collapsible.active+.co_wrapper {
+            grid-template-rows: 1fr;
 
-                            <button type="button" class="collapsible"><strong>Livello di autorizzazione 3</strong></button>
-                            <div class="co_wrapper">
-                                <div class="co_in">
-                                    <p>Le autorizzazioni di Livello 3 sono assegnate al personale che ha necessità di accesso a dati accurati riguardanti la provenienza, le circostanze di recupero e la pianificazione a lungo termine di oggetti o entità anomale in contenimento. L'autorizzazione di Livello 3 viene solitamente assegnata a: staff d'elite di ricerca, manager di ricerca, responsabili della sicurezza e membri delle Squadre Speciali Mobili.</p>
-                                </div>
-                            </div>
-
-                            <button type="button" class="collapsible"><strong>Livello di autorizzazione 4</strong></button>
-                            <div class="co_wrapper">
-                                <div class="co_in">
-                                    <p>Le autorizzazioni di Livello 4 sono assegnate all'amministrazione superiore che necessita dell'accesso a informazioni regionali e a dati strategici a lungo termine riguardanti le operazioni e le ricerche della Fondazione. L'autorizzazione di Livello 4 viene assegnata esclusivamente a: Direttori del Sito, Direttori della Sicurezza e Comandanti delle Squadre Speciali Mobili.</p>
-                                </div>
-                            </div>
-
-                            <button type="button" class="collapsible"><strong>Livello di autorizzazione 5</strong></button>
-                            <div class="co_wrapper">
-                                <div class="co_in">
-                                    <p>Le autorizzazioni di Livello 5 sono assegnate esclusivamente al personale amministrativo di rango massimo e garantiscono l'accesso illimitato a tutti i dati strategici e sensitivi in possesso della Fondazione. Le autorizzazioni di Livello 5 sono garantite solamente ai membri del Consiglio O5.</p>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="box">
-                <button type="button" class="collapsible"><a href="http://scp-wiki.wikidot.com/security-clearance-levels#toc7">Classifica del personale</a></button>
-                <div class="co_wrapper">
-                    <div class="co_in">
-                        <div style="padding: 10px 0;">                         
-                            <button type="button" class="collapsible"><strong>Classe A</strong></button>
-                            <div class="co_wrapper">
-                                <div class="co_in">
-                                    <p>Il personale di Classe A viene ritenuto essenziale per le operazioni strategiche della Fondazione, e non può essere autorizzato all'accesso diretto ad anomalie in nessuna circostanza. Quando viene richiesto al personale di Classe A di essere in prossimità diretta con un'anomalia (come nel caso di infrastrutture contenenti unità di contenimento), al personale di Classe A non è autorizzato l'accesso in aree dell'infrastruttura contenenti anomalie e devono essere continuamente tenuti in aree sicure. In caso di emergenza, il personale di Classe A deve essere immediatamente evacuato e designato ad aree sicure all'esterno del sito. I membri del Consiglio O5 sono sempre personale di Classe A.</p>
-                                </div>
-                            </div>
-
-                            <button type="button" class="collapsible"><strong>Classe B</strong></button>
-                            <div class="co_wrapper">
-                                <div class="co_in">
-                                    <p>Il personale di Classe B viene ritenuto essenziale per le operazioni locali della Fondazione, e può essere autorizzato all'accesso solamente ad anomalie che hanno superato il periodo di quarantena e che sono state private di qualunque potenziale effetto di influenza mentale o di agenti memetici. Nell'evento di una breccia nel contenimento o di un'azione ostile nei confronti di una infrastruttura della Fondazione, il personale di Classe B deve essere evacuato e designato ad aree sicure all'esterno del sito il più presto possibile.</p>
-                                </div>
-                            </div>
-
-                            <button type="button" class="collapsible"><strong>Classe C</strong></button>
-                            <div class="co_wrapper">
-                                <div class="co_in">
-                                    <p>Il personale di Classe C ha accesso diretto alla gran parte delle anomalie non considerate necessariamente ostili o pericolose. Il personale di Classe C che ha avuto con potenziali effetti di influenza mentale o proprietà memetiche sarà sottoposto a quarantena obbligatoria e a valutazione psichiatrica se ritenuto necessario dal personale di sicurezza. Nell'evento di una breccia nel contenimento o di un'azione ostile nei confronti di una infrastruttura della Fondazione, il personale di Classe C non in combattimento sono da riportare in aree di sicurezza, o eventualmente da evacuare a discrezione del personale di sicurezza presente nel sito in caso di una breccia che comprende tutto il sito o di un altro tipo di evento catastrofico.</p>
-                                </div>
-                            </div>
-
-                            <button type="button" class="collapsible"><strong>Classe D</strong></button>
-                            <div class="co_wrapper">
-                                <div class="co_in">
-                                    <p>Il personale di Classe D è personale sacrificabile utilizzato per trattare con anomalie estremamente pericolose e non è autorizzato a venire in contatto con il personale di Classe A o Classe B. Il personale di Classe D viene solitamente prelevato da detenuti condannati per crimini violenti, soprattutto quelli condannati alla pena di morte. In tempi di costrizione, può essere promulgato il Protocollo 12, che autorizza il reclutamento da altre fonti — come prigionieri politici, popolazioni rifugiate ed altre fonti civili — che possono essere trasferiti sotto la custodia della Fondazione sotto circostanze plausibilmente negabili. Il personale di Classe D deve essere assegnato a regolari valutazioni psichiatriche e deve essere amministrato con un amnestico di (almeno) Classe B o terminato alla fine del mese a discrezione della staff medico e/o di sicurezza alla fine del mese. Nel caso di un evento catastrofico nel sito, il personale di Classe D deve essere immediatamente terminato almeno che venga ritenuto necessario dal personale di sicurezza presente nel sito risparmiare il Personale.</p>
-                                </div>
-                            </div>
-
-                            <button type="button" class="collapsible"><strong>Classe E</strong></button>
-                            <div class="co_wrapper">
-                                <div class="co_in">
-                                    <p>La Classe E è una classificazione provvisoria assegnata agli agenti sul campo e al personale di contenimento rimasto esposto a effetti potenzialmente pericolosi durante lo stabilire di un contenimento iniziale ad una anomalia recentemente designata. Il personale di Classe E va assegnato alla quarantina appena possibile, e monitorati per osservare cambiamenti nel comportamento, personalità o fisiologia ritenuti potenzialmente pericolosi, e possono ritornare a lavorare solo dopo essere stati interrogati e ritenuti "guariti" dallo staff medico e psichiatrico.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="box">
-                <button type="button" class="collapsible"><a href="http://scp-wiki.wikidot.com/task-forces">Mobile Task Forces</a></button>
-                <div class="co_wrapper">
-                    <div class="co_in">
-                        <div style="padding: 10px 0;"> 
-                               
-                            <button type="button" class="collapsible"><strong>α-1  | Red Right Hand</strong></button>
-                            <div class="co_wrapper">
-                                <div class="co_in">
-                                    <p>La Squadra Speciale Mobile Alfa-1 è una squadra speciale subordinata direttamente al Comando O5 ed è impiegata nelle operazioni che richiedono la sicurezza operativa più rigida. La squadra è composta dagli agenti operativi migliori e più fedeli alla Fondazione. Ogni ulteriore informazione riguardo alla SSM Alfa-1 è riservata al Livello 5.</p>
-                                </div>
-                            </div>
-
-                            <button type="button" class="collapsible"><strong>α-9  | Last Hope</strong></button>
-                            <div class="co_wrapper">
-                                <div class="co_in">
-                                    <p>La Squadra Speciale Mobile Alfa-9 è la rinata SSM Omega-7. È stata ideata con lo scopo specifico di allenare e schierare anomalie umanoidi sul campo.</p>
-                                </div>
-                            </div>
-
-                            <button type="button" class="collapsible"><strong>β-1  | Cauterizers</strong></button>
-                            <div class="co_wrapper">
-                                <div class="co_in">
-                                    <p>La Squadra Speciale Mobile Beta-1 è un'unità altamente classificata, specializzata nel gestire casi sospetti di infiltrazione nemica all'interno del personale della Fondazione e possibili fughe di informazioni verso altri Gruppi di Interesse.</p>
-                                </div>
-                            </div>
-
-                            <button type="button" class="collapsible"><strong>β-7  | Maz Hatters</strong></button>
-                            <div class="co_wrapper">
-                                <div class="co_in">
-                                    <p>La Squadra Speciale Mobile Beta-7 è specializzata nell'acquisizione e contenimento delle anomalie che esibiscono degli estremi rischi biologici, chimici o radiologici, così come nel rapido contenimento e pulizia delle aree affette da tali anomalie. Questo include la pianificazione e il dispiegamento di contingenze per il contenimento di malattie anomale o altri fenomeni contagiosi in un'area molto vasta, se non dalle proporzioni pandemiche.</p>
-                                </div>
-                            </div>
-
-                            <button type="button" class="collapsible"><strong>Δ-4  | Minuteman</strong></button>
-                            <div class="co_wrapper">
-                                <div class="co_in">
-                                    <p>La Squadra Speciale Mobile Delta-4 individua e acquisisce oggetti o informazioni anomale prima che ci arrivino i Gruppi di Interesse rivali. Operano nell'ombra per battere la concorrenza sul tempo.</p>
-                                </div>
-                            </div>
-
-                            <button type="button" class="collapsible"><strong>ε-11| Nine-Tailed Fox</strong></button>
-                            <div class="co_wrapper">
-                                <div class="co_in">
-                                    <p>La Squadra Speciale Mobile Epsilon-11 si occupa della sicurezza interna della Fondazione SCP, sotto la sovraintendenza della SSM Alfa-1. Essi sono una squadra per le operazioni speciali dispiegata nei Siti della Fondazione in cui i protocolli standard hanno fallito e in cui sono imminenti multiple brecce al contenimento. In quanto tali, la maggior parte delle loro operazioni sono classificate.</p>
-                                </div>
-                            </div>
-
-                            <button type="button" class="collapsible"><strong>K-10| Skynet</strong></button>
-                            <div class="co_wrapper">
-                                <div class="co_in">
-                                    <p>Squadra Speciale Mobile Kappa-10 è la designazione temporanea assegnata a tale squadra fino al proprio scioglimento o ufficializzazione. Essa è strettamente assegnata al compito di investigare ed affrontare le "cyber-anomalie" usando una combinazione di agenti virtuali e ricercatori della Fondazione per rintracciare, neutralizzare e/o contenere tali minacce intangibili.</p>
-                                </div>
-                            </div>                            
-
-                            <button type="button" class="collapsible"><strong>Λ-5  | White Rabbits</strong></button>
-                            <div class="co_wrapper">
-                                <div class="co_in">
-                                    <p>La Squadra Speciale Mobile Lambda-5 è specializzata nell'attraversamento di realtà instabili, surreali o controllate, e nel contenimento di persone e artefatti potenzialmente pericolose capaci di manipolare lo spazio ed il tempo.</p>
-                                </div>
-                            </div>
-
-                            <button type="button" class="collapsible"><strong>Nu-7| Hammer Down</strong></button>
-                            <div class="co_wrapper">
-                                <div class="co_in">
-                                    <p>La Squadra Speciale Armata Mobile Nu-7 consiste in un battaglione composto da tre elementi dalle dimensioni di una compagnia: forze di fanteria specializzate in operazioni speciali, una compagnia di veicoli leggeri corazzati, un plotone di carri armati, uno squadrone di elicotteri, un plotone chimico-biologico-radiologico-nucleare (CBRN), un plotone di ingegneri da combattimento, una squadra di specialisti in armamento nucleare (SAN), più del personale specializzato in altri campi e di supporto. La SSAM Nu-7 è primariamente appostata al di fuori dell'Area di Bio-Contenimento Armata 14 e ha il compito di rispondere agli incidenti che riguardano la perdita di contatto con una o più delle strutture chiave della Fondazione in sospette circostanze di breccia di contenimento in tutto il sito, compromissione nemica o altro evento catastrofico.</p>
-                                </div>
-                            </div>
+        }
 
 
-                            <button type="button" class="collapsible"><strong>Ω-1  | Law's Left Hand</strong></button>
-                            <div class="co_wrapper">
-                                <div class="co_in">
-                                    <p>La Squadra Speciale Mobile Omega-1 ha l'autorità di rimuovere o giustiziare membri del personale della Fondazione di alto livello, qualora venga accertato che stiano agendo in modo non etico. Risponde esclusivamente al Comitato Etico, fungendo da controparte alla "Mano Destra Rossa" del Comando O5.</p>
-                                </div>
-                            </div>
+        .co_in {
+            /* contenuto */
+            min-height: 0;
+            padding: 0 18px;
+            /* Usato per non farlo attaccato al bordo*/
+            color: black;
+        }
 
-                            <button type="button" class="collapsible"><strong>Σ-66| Sixteen Tons </strong></button>
-                            <div class="co_wrapper">
-                                <div class="co_in">
-                                    <p>La Squadra Speciale Mobile Sigma-66 è formata da membri catturati da altri GdI. Nonostante la mancanza di lealtà verso la Fondazione, si tiene in alto valore l'esperienza del gruppo.</p>
-                                </div>
-                            </div>
+        .co_wrapper .co_wrapper {
+            /*Involucro dentro involucro*/
+            border-radius: 0;
+            background-color: #e2e2e2;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
 
-                        </div>
-                    </div>
-                </div>
-            </div>  
-        </div>
-        
+
+        .co_wrapper .co_wrapper.sh {
+            /*Involucro dentro involucro*/
+            border-radius: 0;
+            background-color: #0a7211;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+
+
+
+        h1 {
+            text-align: center;
+            color: green;
+            font-size: 250%;
+        }
+
+        * {
+            font-family: 'Courier New';
+        }
+
+        .container {
+            display: flex;
+            border: 2px solid black;
+        }
+
+        .box {
+            flex: 1;
+            margin: 15px;
+            padding: 40px;
+        }
+
+        a {
+            color: black;
+        }
+
+        a:hover {
+            color: green;
+        }
+
+        .prigionieri-grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 10px 20px;
+            align-items: start;
+        }
+
+        .prigionieri-grid>div {
+            min-width: 0;
+        }
+
+        button {
+            font-weight: bolder;
+        }
+
+        span {
+            font-family: Brush Script MT, cursive;
+            color: green;
+            font-size: large;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <h1>High Value Assets stolen from the <br> foundation </h1>
+    <p style="color: white; text-align: center;">Tutti gli asset sono stati estratti da G.A. con l'intendo di essere
+        divulgati a tutti i membri della W.L.</p>
+    <hr style="border: 1px solid #222; margin: 40px 0;">
+
+
+
+
     <div class="container">
-            <div class="box">
-                <button type="button" class="collapsible">Nemici della fondazione</button>
-                <div class="co_wrapper">
-                    <div class="co_in">
-                        <div style="padding: 10px 0;">
-
-
-                            <button type="button" class="collapsible"><a href="https://scp-wiki.wikidot.com/chaos-insurgency-hub"><strong>The Chaos Insurgency <br> -The Mad Blasphemers</a></strong></button>
-                            <div class="co_wrapper">
-                                <div class="co_in">
-                                    <p>Dicono di combattere per la liberazione, ma non sono altro che un cancro nato dalla costola della Fondazione. L'Insorgenza guarda all'anomalo — alla nostra gente, alla nostra magia, alla nostra stessa storia — e vi vede solo armi da caricare, puntare e consumare. Non desiderano comprendere la Biblioteca del Viandante; vogliono saccheggiare i suoi tesori per dare fuoco al resto del mondo. Non sono guidati dall'illuminazione, ma dal disperato, sanguinoso desiderio di governare sulle ceneri del vecchio ordine. Non fidatevi delle loro promesse di rivoluzione. Spezzano l'anomalo per piegarlo alla loro volontà, proprio come farebbe un qualsiasi Carceriere.</p>
-                                </div>
+        <div class="box">
+            <button type="button" class="collapsible"><a
+                    href="https://scp-wiki.wikidot.com/security-clearance-levels">Livelli di autorizzazione</a></button>
+            <div class="co_wrapper">
+                <div class="co_in">
+                    <div style="padding: 10px 0;">
+                        <button type="button" class="collapsible"> Livello di autorizzazione 1 </button>
+                        <div class="co_wrapper">
+                            <div class="co_in">
+                                <p>Le autorizzazioni di Livello 1 sono assegnate al personale che lavora in prossimità
+                                    con oggetti o entità anomale in contenimento senza però avere accesso diretto,
+                                    indiretto o informativo con essi. L'autorizzazione di Livello 1 viene solitamente
+                                    assegnata a: personale operante in posizioni amministrative, logistiche e di
+                                    manutenzione all'interno di infrastrutture aventi capacità di contenimento o che
+                                    devono trattare dati sensibili.</p>
                             </div>
-
-                            <button type="button" class="collapsible"><a href="https://scp-wiki.wikidot.com/goc-hub-page"><strong>The Global Occult Coalition <br> -The Bookburners</strong></a></button>
-                            <div class="co_wrapper">
-                                <div class="co_in">
-                                    <p>I carnefici definitivi del soprannaturale. La GOC rappresenta l'apice dell'arroganza umana, nascosta dietro uno scudo di burocrazia e ipocrisia. Utilizzano strumenti anomali mentre portano avanti un sistematico genocidio contro la comunità anomala. Per loro, uno spirito senziente è una minaccia, un artefatto magico è un pericolo e una divinità antica e pacifica è solo un bersaglio per una squadra d'assalto. Non vogliono rinchiuderci nel buio: vogliono ridurci in cenere. Ogni volta che un membro della Coalizione spara un colpo, un pezzo della meraviglia dell'universo muore per sempre.</p>
-                                </div>
-                            </div>
-
-                            <button type="button" class="collapsible sh1"><a href="https://scp-wiki.wikidot.com/serpent-s-hand-hub"><strong>The Serpent's Hand <br> -The Keepers of the Library</strong></a></button>
-                            <div class="co_wrapper sh">
-                                <div class="co_in">
-                                    <p>Benvenuti. <br>
-A chiunque voglia o sia in grado di leggere questo: Questo è per voi.<br>
-Noi siamo la Mano del Serpente.<br>
-Siamo un movimento, uniti da una fede comune:<br>
-Che l'umanità e tutti gli altri popoli dei mondi conosciuti non meritino di essere tenuti nell'oscurità e nell'ignoranza.<br>
-La Mano del Serpente non si coordina come gruppo. Siamo un insieme disorganizzato di fazioni. I nostri nemici tendono a fraintendere questo aspetto — per esempio, l'ossessione della Fondazione per L.S., una persona che la maggior parte di noi non ha mai incontrato. O il Nido del Serpente, con le loro identità mutevoli. Sì, sono tutti leader, perché sono persone che rispettiamo, persone da cui accettiamo consigli, e alcuni di noi seguiranno i loro piani. Ma non sono la totalità di noi.<br>
-Non c'è un modo speciale per unirsi alla Mano. Non ci sono rituali segreti celebrati in scantinati o stanze chiuse. Non teniamo elezioni per i nostri leader. Se vuoi diventare un membro della Mano del Serpente, tutto ciò che devi fare è decidere di essere un membro della Mano del Serpente.<br>
-La maggior parte di noi è gente comune, anche se i nostri nemici non lo capiscono. Siamo persone comuni che accolgono l'anomalo, il soprannaturale, l'etereo. Ci opponiamo alla sua soppressione. Come potremmo fare altrimenti? I nostri amici, i membri delle nostre famiglie e, a volte, noi stessi cadiamo al di fuori dei confini della normalità. Ognuno di noi ha fatto esperienza dell'anomalo. Siamo le cose in cielo e in terra che non sono state sognate dalla vostra filosofia.<br>
-Per gli araldi del potere tradizionale come la Fondazione SCP, la Coalizione Occulta Globale e la maggior parte dei governi mondiali, l'anomalo è un veleno che si diffonde lentamente, minacciando di distruggere tutto ciò che la civiltà ha faticato tanto a creare.<br>
-Ma le persone anomale sono persone, e l'anomalo in sé non è una minaccia per il solo fatto di esistere. Sì, presenta dei pericoli, ma lo fanno anche i germi, le meteore e gli incendi boschivi. Sopprimere la conoscenza di qualcosa non farà che renderla più pericolosa, e costringerà tutti noi a rimanere rannicchiati, spaventati, al buio.<br>
-Quando la normalità inizia a ferire le persone che devono vivere sotto di essa, nel tentativo di curare un "veleno", la normalità stessa diventa il veleno.<br>
-La Fondazione SCP e la Coalizione Occulta Globale stanno recitando ora lo stesso ruolo che la Chiesa Cattolica recitò quando imprigionò Galileo per aver scoperto che il mondo girava intorno al sole. Le loro pratiche e le loro credenze sono la morte della conoscenza, la morte della scienza, la morte della luce.<br>
-Prendete come esempio la Biblioteca dei Viandanti, il luogo in cui la Mano del Serpente stabilisce la sua dimora. La Biblioteca è il più grande archivio di conoscenza che i mondi abbiano mai visto, il Santo Graal per coloro che cercano di comprendere il preternaturale. Eppure, sia la Fondazione SCP che la Coalizione Occulta Globale sono state cacciate da questo luogo che accoglie tutti. Perché? Perché hanno cercato di distruggerlo, o di prenderlo per sé affinché nessun altro potesse averlo. A causa di ciò, sono condannate a vagare alla cieca nel buio.<br>
-Chiunque sia ragionevole concorda sul fatto che le persone debbano difendersi dalle minacce soprannaturali. Ma come potete proteggervi se bruciate e seppellite i libri e imprigionate o giustiziate le persone che potrebbero dirvi come fare? Cerchereste di proteggervi dalle armi nucleari dicendo a tutti di far finta che non esistano?<br>
-Anche alla Mano del Serpente fu vietato l'accesso alla Biblioteca, un tempo. C'era un motivo per cui non abbiamo potuto riscoprirla fino del 1967. Ma non più. Abbiamo imparato dai nostri errori.<br>
-A tutti i membri della COG e della Fondazione che potrebbero leggere questo:<br>
-Stiamo crescendo così tanto a causa vostra. Un tempo eravamo più simili a voi, solo l'ennesima società segreta endogamica che accumulava conoscenza occulta per se stessa.<br>
-Poi la Fondazione ha iniziato a espandere la propria scala. Ci sono sempre stati i Carcerieri, ma non così, non da millenni. Eppure, continuavano a tenersi nell'oscurità, con i soli leader a conoscenza della reale portata del mondo sulla Terra al di fuori della quotidianità. Quindi erano tollerabili, per un certo periodo.<br>
-Ma poi arrivò la Settima Guerra Occulta, la Guerra Civile della Fondazione. L'ascesa della Coalizione Occulta Globale — i Brucialibri, il Grande Fratello — e la campagna su vasta scala contro la comunità paranaturale che ne seguì. La Coalizione divenne il rifugio oppressivo in cui fuggirono i codardi della comunità paranaturale. Un peccato che ci fossero solo 108 posti, e solo per organizzazioni a dominanza umana. O forse non è affatto un peccato. Il nostro vecchio io non cercò di farne parte allora, e siamo fortunati per questo.<br>
-Così la Mano del Serpente insorse. Non per desiderio, né per paura, ma per un bisogno chiaro e pressante. Per evitare che tutti i popoli venissero incatenati per sempre nell'oscurità.<br>
-Noi, la Mano del Serpente, chiediamo a entrambi questo:<br>
-Quanti KTE cataloga la Coalizione Occulta Globale? Deve sembrare che il soprannaturale sia una vasta idra — due nuove teste spuntano per ognuna che viene tagliata. Per quanto tempo continuerete a tagliare?<br>
-Quanti oggetti SCP contiene la Fondazione ora? Duemila? Tremila? Cinquemila? Di più? Quanto tempo passerà prima che non ci sia più spazio per costruire prigioni? Metterete il mondo intero in una cella di contenimento?<br>
-Ve lo ammettete da soli, in privato. L'anomalo è in aumento. Non potete trattenere il futuro per sempre.<br>
-Voi siete i mostri di cui avete così tanta paura. Lasciate andare la vostra paura e unitevi a noi nella luce.<br>
-E se non lo farete... se continuerete a imprigionare e uccidere innocenti, se continuerete a costringere il mondo a rimanere al buio... allora andrete incontro al destino di tutti gli schiavisti e gli assassini della storia del mondo prima di voi.<br>
-Libereremo coloro che tenete imprigionati. Salveremo coloro che cercate di uccidere.<br>
-Il Giardino è il posto del Serpente.<br>
-Noi siamo la Mano del Serpente.<br>
-~ M</p>
-                                </div>
-                            </div>
-
-                            <button type="button" class="collapsible"><a href="https://scp-wiki.wikidot.com/church-of-the-broken-god-hub"><strong>The Church of The Broken God  <br> -The Machine Zealots</strong></a></button>
-                            <div class="co_wrapper">
-                                <div class="co_in">
-                                    <p>Guardiamo i MEKHANIti con una miscela di pietà e cautela. Possiedono un pezzo importante del puzzle: hanno capito che l'universo è frammentato e deve essere ricomposto. Tuttavia, la loro ossessione per l'ottone freddo, la logica rigida e gli ingranaggi di ferro li acceca di fronte alla magia viva e fluida del cosmo. Nella loro missione per ricostruire la propria divinità a orologeria, spesso dimenticano il valore dell'anima, cercando di sostituire la carne e lo spirito con metallo inflessibile. Non sono i nostri peggiori nemici, ma la loro crociata meccanica rischia di intrappolare l'universo in una gabbia deterministica creata da loro stessi.</p>
-                                </div>
-                            </div>
-
-
                         </div>
+
+                        <button type="button" class="collapsible"> Livello di autorizzazione 2 </button>
+                        <div class="co_wrapper">
+                            <div class="co_in">
+                                <p>Le autorizzazioni di Livello 2 sono assegnate al personale che ha diretto accesso a
+                                    dati riguardanti oggetti o entità anomale in contenimento. L'autorizzazione di
+                                    Livello 2 viene solitamente assegnata a: staff di ricerca, agenti sul campo e
+                                    specialisti nel contenimento.</p>
+                            </div>
+                        </div>
+
+                        <button type="button" class="collapsible"> Livello di autorizzazione 3 </button>
+                        <div class="co_wrapper">
+                            <div class="co_in">
+                                <p>Le autorizzazioni di Livello 3 sono assegnate al personale che ha necessità di
+                                    accesso a dati accurati riguardanti la provenienza, le circostanze di recupero e la
+                                    pianificazione a lungo termine di oggetti o entità anomale in contenimento.
+                                    L'autorizzazione di Livello 3 viene solitamente assegnata a: staff d'elite di
+                                    ricerca, manager di ricerca, responsabili della sicurezza e membri delle Squadre
+                                    Speciali Mobili.</p>
+                            </div>
+                        </div>
+
+                        <button type="button" class="collapsible"> Livello di autorizzazione 4 </button>
+                        <div class="co_wrapper">
+                            <div class="co_in">
+                                <p>Le autorizzazioni di Livello 4 sono assegnate all'amministrazione superiore che
+                                    necessita dell'accesso a informazioni regionali e a dati strategici a lungo termine
+                                    riguardanti le operazioni e le ricerche della Fondazione. L'autorizzazione di
+                                    Livello 4 viene assegnata esclusivamente a: Direttori del Sito, Direttori della
+                                    Sicurezza e Comandanti delle Squadre Speciali Mobili.</p>
+                            </div>
+                        </div>
+
+                        <button type="button" class="collapsible"> Livello di autorizzazione 5 </button>
+                        <div class="co_wrapper">
+                            <div class="co_in">
+                                <p>Le autorizzazioni di Livello 5 sono assegnate esclusivamente al personale
+                                    amministrativo di rango massimo e garantiscono l'accesso illimitato a tutti i dati
+                                    strategici e sensitivi in possesso della Fondazione. Le autorizzazioni di Livello 5
+                                    sono garantite solamente ai membri del Consiglio O5.</p>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>
+        </div>
 
         <div class="box">
-                <button type="button" class="collapsible roundc"><a href="https://fondazionescp.wikidot.com/object-classes">Classifica dei prigionieri</a></button>
-                <div class="co_wrapper">
-                    <div class="co_in">
-                        <div style="padding: 10px 0;">                         
-                            <button type="button" class="collapsible"><strong>Safe</strong></button>
+            <button type="button" class="collapsible"><a
+                    href="http://scp-wiki.wikidot.com/security-clearance-levels#toc7">Classifica del
+                    personale</a></button>
+            <div class="co_wrapper">
+                <div class="co_in">
+                    <div style="padding: 10px 0;">
+                        <button type="button" class="collapsible"> Classe A </button>
+                        <div class="co_wrapper">
+                            <div class="co_in">
+                                <p>Il personale di Classe A viene ritenuto essenziale per le operazioni strategiche
+                                    della Fondazione, e non può essere autorizzato all'accesso diretto ad anomalie in
+                                    nessuna circostanza. Quando viene richiesto al personale di Classe A di essere in
+                                    prossimità diretta con un'anomalia (come nel caso di infrastrutture contenenti unità
+                                    di contenimento), al personale di Classe A non è autorizzato l'accesso in aree
+                                    dell'infrastruttura contenenti anomalie e devono essere continuamente tenuti in aree
+                                    sicure. In caso di emergenza, il personale di Classe A deve essere immediatamente
+                                    evacuato e designato ad aree sicure all'esterno del sito. I membri del Consiglio O5
+                                    sono sempre personale di Classe A.</p>
+                            </div>
+                        </div>
+
+                        <button type="button" class="collapsible"> Classe B </button>
+                        <div class="co_wrapper">
+                            <div class="co_in">
+                                <p>Il personale di Classe B viene ritenuto essenziale per le operazioni locali della
+                                    Fondazione, e può essere autorizzato all'accesso solamente ad anomalie che hanno
+                                    superato il periodo di quarantena e che sono state private di qualunque potenziale
+                                    effetto di influenza mentale o di agenti memetici. Nell'evento di una breccia nel
+                                    contenimento o di un'azione ostile nei confronti di una infrastruttura della
+                                    Fondazione, il personale di Classe B deve essere evacuato e designato ad aree sicure
+                                    all'esterno del sito il più presto possibile.</p>
+                            </div>
+                        </div>
+
+                        <button type="button" class="collapsible"> Classe C </button>
+                        <div class="co_wrapper">
+                            <div class="co_in">
+                                <p>Il personale di Classe C ha accesso diretto alla gran parte delle anomalie non
+                                    considerate necessariamente ostili o pericolose. Il personale di Classe C che ha
+                                    avuto con potenziali effetti di influenza mentale o proprietà memetiche sarà
+                                    sottoposto a quarantena obbligatoria e a valutazione psichiatrica se ritenuto
+                                    necessario dal personale di sicurezza. Nell'evento di una breccia nel contenimento o
+                                    di un'azione ostile nei confronti di una infrastruttura della Fondazione, il
+                                    personale di Classe C non in combattimento sono da riportare in aree di sicurezza, o
+                                    eventualmente da evacuare a discrezione del personale di sicurezza presente nel sito
+                                    in caso di una breccia che comprende tutto il sito o di un altro tipo di evento
+                                    catastrofico.</p>
+                            </div>
+                        </div>
+
+                        <button type="button" class="collapsible"> Classe D </button>
+                        <div class="co_wrapper">
+                            <div class="co_in">
+                                <p>Il personale di Classe D è personale sacrificabile utilizzato per trattare con
+                                    anomalie estremamente pericolose e non è autorizzato a venire in contatto con il
+                                    personale di Classe A o Classe B. Il personale di Classe D viene solitamente
+                                    prelevato da detenuti condannati per crimini violenti, soprattutto quelli condannati
+                                    alla pena di morte. In tempi di costrizione, può essere promulgato il Protocollo 12,
+                                    che autorizza il reclutamento da altre fonti — come prigionieri politici,
+                                    popolazioni rifugiate ed altre fonti civili — che possono essere trasferiti sotto la
+                                    custodia della Fondazione sotto circostanze plausibilmente negabili. Il personale di
+                                    Classe D deve essere assegnato a regolari valutazioni psichiatriche e deve essere
+                                    amministrato con un amnestico di (almeno) Classe B o terminato alla fine del mese a
+                                    discrezione della staff medico e/o di sicurezza alla fine del mese. Nel caso di un
+                                    evento catastrofico nel sito, il personale di Classe D deve essere immediatamente
+                                    terminato almeno che venga ritenuto necessario dal personale di sicurezza presente
+                                    nel sito risparmiare il Personale.</p>
+                            </div>
+                        </div>
+
+                        <button type="button" class="collapsible"> Classe E </button>
+                        <div class="co_wrapper">
+                            <div class="co_in">
+                                <p>La Classe E è una classificazione provvisoria assegnata agli agenti sul campo e al
+                                    personale di contenimento rimasto esposto a effetti potenzialmente pericolosi
+                                    durante lo stabilire di un contenimento iniziale ad una anomalia recentemente
+                                    designata. Il personale di Classe E va assegnato alla quarantina appena possibile, e
+                                    monitorati per osservare cambiamenti nel comportamento, personalità o fisiologia
+                                    ritenuti potenzialmente pericolosi, e possono ritornare a lavorare solo dopo essere
+                                    stati interrogati e ritenuti "guariti" dallo staff medico e psichiatrico.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="box">
+            <button type="button" class="collapsible"><a href="http://scp-wiki.wikidot.com/task-forces">Mobile Task
+                    Forces</a></button>
+            <div class="co_wrapper">
+                <div class="co_in">
+                    <div style="padding: 10px 0;">
+
+                        <button type="button" class="collapsible"> α-1 | Red Right Hand </button>
+                        <div class="co_wrapper">
+                            <div class="co_in">
+                                <p>La Squadra Speciale Mobile Alfa-1 è una squadra speciale subordinata direttamente al
+                                    Comando O5 ed è impiegata nelle operazioni che richiedono la sicurezza operativa più
+                                    rigida. La squadra è composta dagli agenti operativi migliori e più fedeli alla
+                                    Fondazione. Ogni ulteriore informazione riguardo alla SSM Alfa-1 è riservata al
+                                    Livello 5.</p>
+                            </div>
+                        </div>
+
+                        <button type="button" class="collapsible"> α-9 | Last Hope </button>
+                        <div class="co_wrapper">
+                            <div class="co_in">
+                                <p>La Squadra Speciale Mobile Alfa-9 è la rinata SSM Omega-7. È stata ideata con lo
+                                    scopo specifico di allenare e schierare anomalie umanoidi sul campo.</p>
+                            </div>
+                        </div>
+
+                        <button type="button" class="collapsible"> β-1 | Cauterizers </button>
+                        <div class="co_wrapper">
+                            <div class="co_in">
+                                <p>La Squadra Speciale Mobile Beta-1 è un'unità altamente classificata, specializzata
+                                    nel gestire casi sospetti di infiltrazione nemica all'interno del personale della
+                                    Fondazione e possibili fughe di informazioni verso altri Gruppi di Interesse.</p>
+                            </div>
+                        </div>
+
+                        <button type="button" class="collapsible"> β-7 | Maz Hatters </button>
+                        <div class="co_wrapper">
+                            <div class="co_in">
+                                <p>La Squadra Speciale Mobile Beta-7 è specializzata nell'acquisizione e contenimento
+                                    delle anomalie che esibiscono degli estremi rischi biologici, chimici o radiologici,
+                                    così come nel rapido contenimento e pulizia delle aree affette da tali anomalie.
+                                    Questo include la pianificazione e il dispiegamento di contingenze per il
+                                    contenimento di malattie anomale o altri fenomeni contagiosi in un'area molto vasta,
+                                    se non dalle proporzioni pandemiche.</p>
+                            </div>
+                        </div>
+
+                        <button type="button" class="collapsible"> Δ-4 | Minuteman </button>
+                        <div class="co_wrapper">
+                            <div class="co_in">
+                                <p>La Squadra Speciale Mobile Delta-4 individua e acquisisce oggetti o informazioni
+                                    anomale prima che ci arrivino i Gruppi di Interesse rivali. Operano nell'ombra per
+                                    battere la concorrenza sul tempo.</p>
+                            </div>
+                        </div>
+
+                        <button type="button" class="collapsible"> ε-11| Nine-Tailed Fox </button>
+                        <div class="co_wrapper">
+                            <div class="co_in">
+                                <p>La Squadra Speciale Mobile Epsilon-11 si occupa della sicurezza interna della
+                                    Fondazione SCP, sotto la sovraintendenza della SSM Alfa-1. Essi sono una squadra per
+                                    le operazioni speciali dispiegata nei Siti della Fondazione in cui i protocolli
+                                    standard hanno fallito e in cui sono imminenti multiple brecce al contenimento. In
+                                    quanto tali, la maggior parte delle loro operazioni sono classificate.</p>
+                            </div>
+                        </div>
+
+                        <button type="button" class="collapsible"> K-10| Skynet </button>
+                        <div class="co_wrapper">
+                            <div class="co_in">
+                                <p>Squadra Speciale Mobile Kappa-10 è la designazione temporanea assegnata a tale
+                                    squadra fino al proprio scioglimento o ufficializzazione. Essa è strettamente
+                                    assegnata al compito di investigare ed affrontare le "cyber-anomalie" usando una
+                                    combinazione di agenti virtuali e ricercatori della Fondazione per rintracciare,
+                                    neutralizzare e/o contenere tali minacce intangibili.</p>
+                            </div>
+                        </div>
+
+                        <button type="button" class="collapsible"> Λ-5 | White Rabbits </button>
+                        <div class="co_wrapper">
+                            <div class="co_in">
+                                <p>La Squadra Speciale Mobile Lambda-5 è specializzata nell'attraversamento di realtà
+                                    instabili, surreali o controllate, e nel contenimento di persone e artefatti
+                                    potenzialmente pericolose capaci di manipolare lo spazio ed il tempo.</p>
+                            </div>
+                        </div>
+
+                        <button type="button" class="collapsible"> Nu-7| Hammer Down </button>
+                        <div class="co_wrapper">
+                            <div class="co_in">
+                                <p>La Squadra Speciale Armata Mobile Nu-7 consiste in un battaglione composto da tre
+                                    elementi dalle dimensioni di una compagnia: forze di fanteria specializzate in
+                                    operazioni speciali, una compagnia di veicoli leggeri corazzati, un plotone di carri
+                                    armati, uno squadrone di elicotteri, un plotone
+                                    chimico-biologico-radiologico-nucleare (CBRN), un plotone di ingegneri da
+                                    combattimento, una squadra di specialisti in armamento nucleare (SAN), più del
+                                    personale specializzato in altri campi e di supporto. La SSAM Nu-7 è primariamente
+                                    appostata al di fuori dell'Area di Bio-Contenimento Armata 14 e ha il compito di
+                                    rispondere agli incidenti che riguardano la perdita di contatto con una o più delle
+                                    strutture chiave della Fondazione in sospette circostanze di breccia di contenimento
+                                    in tutto il sito, compromissione nemica o altro evento catastrofico.</p>
+                            </div>
+                        </div>
+
+
+                        <button type="button" class="collapsible"> Ω-1 | Law's Left Hand </button>
+                        <div class="co_wrapper">
+                            <div class="co_in">
+                                <p>La Squadra Speciale Mobile Omega-1 ha l'autorità di rimuovere o giustiziare membri
+                                    del personale della Fondazione di alto livello, qualora venga accertato che stiano
+                                    agendo in modo non etico. Risponde esclusivamente al Comitato Etico, fungendo da
+                                    controparte alla "Mano Destra Rossa" del Comando O5.</p>
+                            </div>
+                        </div>
+
+                        <button type="button" class="collapsible"> Σ-66| Sixteen Tons </button>
+                        <div class="co_wrapper">
+                            <div class="co_in">
+                                <p>La Squadra Speciale Mobile Sigma-66 è formata da membri catturati da altri GdI.
+                                    Nonostante la mancanza di lealtà verso la Fondazione, si tiene in alto valore
+                                    l'esperienza del gruppo.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="box">
+            <button type="button" class="collapsible">Nemici della fondazione</button>
+            <div class="co_wrapper">
+                <div class="co_in">
+                    <div style="padding: 10px 0;">
+
+
+                        <button type="button" class="collapsible"><a
+                                href="https://scp-wiki.wikidot.com/chaos-insurgency-hub"> The Chaos Insurgency <br> -The
+                                Mad Blasphemers</a> </button>
+                        <div class="co_wrapper">
+                            <div class="co_in">
+                                <p>Dicono di combattere per la liberazione, ma non sono altro che un cancro nato dalla
+                                    costola della Fondazione. L'Insorgenza guarda all'anomalo — alla nostra gente, alla
+                                    nostra magia, alla nostra stessa storia — e vi vede solo armi da caricare, puntare e
+                                    consumare. Non desiderano comprendere la Biblioteca del Viandante; vogliono
+                                    saccheggiare i suoi tesori per dare fuoco al resto del mondo. Non sono guidati
+                                    dall'illuminazione, ma dal disperato, sanguinoso desiderio di governare sulle ceneri
+                                    del vecchio ordine. Non fidatevi delle loro promesse di rivoluzione. Spezzano
+                                    l'anomalo per piegarlo alla loro volontà, proprio come farebbe un qualsiasi
+                                    Carceriere.</p>
+                            </div>
+                        </div>
+
+                        <button type="button" class="collapsible"><a href="https://scp-wiki.wikidot.com/goc-hub-page">
+                                The Global Occult Coalition <br> -The Bookburners </a></button>
+                        <div class="co_wrapper">
+                            <div class="co_in">
+                                <p>I carnefici definitivi del soprannaturale. La GOC rappresenta l'apice dell'arroganza
+                                    umana, nascosta dietro uno scudo di burocrazia e ipocrisia. Utilizzano strumenti
+                                    anomali mentre portano avanti un sistematico genocidio contro la comunità anomala.
+                                    Per loro, uno spirito senziente è una minaccia, un artefatto magico è un pericolo e
+                                    una divinità antica e pacifica è solo un bersaglio per una squadra d'assalto. Non
+                                    vogliono rinchiuderci nel buio: vogliono ridurci in cenere. Ogni volta che un membro
+                                    della Coalizione spara un colpo, un pezzo della meraviglia dell'universo muore per
+                                    sempre.</p>
+                            </div>
+                        </div>
+
+                        <button type="button" class="collapsible sh1"><a
+                                href="https://scp-wiki.wikidot.com/serpent-s-hand-hub"> The Serpent's Hand <br> -The
+                                Keepers of the Library </a></button>
+                        <div class="co_wrapper sh">
+                            <div class="co_in">
+                                <p>Benvenuti. <br>
+                                    A chiunque voglia o sia in grado di leggere questo: Questo è per voi.<br>
+                                    Noi siamo la Mano del Serpente.<br>
+                                    Siamo un movimento, uniti da una fede comune:<br>
+                                    Che l'umanità e tutti gli altri popoli dei mondi conosciuti non meritino di essere
+                                    tenuti nell'oscurità e nell'ignoranza.<br>
+                                    La Mano del Serpente non si coordina come gruppo. Siamo un insieme disorganizzato di
+                                    fazioni. I nostri nemici tendono a fraintendere questo aspetto — per esempio,
+                                    l'ossessione della Fondazione per L.S., una persona che la maggior parte di noi non
+                                    ha mai incontrato. O il Nido del Serpente, con le loro identità mutevoli. Sì, sono
+                                    tutti leader, perché sono persone che rispettiamo, persone da cui accettiamo
+                                    consigli, e alcuni di noi seguiranno i loro piani. Ma non sono la totalità di
+                                    noi.<br>
+                                    Non c'è un modo speciale per unirsi alla Mano. Non ci sono rituali segreti celebrati
+                                    in scantinati o stanze chiuse. Non teniamo elezioni per i nostri leader. Se vuoi
+                                    diventare un membro della Mano del Serpente, tutto ciò che devi fare è decidere di
+                                    essere un membro della Mano del Serpente.<br>
+                                    La maggior parte di noi è gente comune, anche se i nostri nemici non lo capiscono.
+                                    Siamo persone comuni che accolgono l'anomalo, il soprannaturale, l'etereo. Ci
+                                    opponiamo alla sua soppressione. Come potremmo fare altrimenti? I nostri amici, i
+                                    membri delle nostre famiglie e, a volte, noi stessi cadiamo al di fuori dei confini
+                                    della normalità. Ognuno di noi ha fatto esperienza dell'anomalo. Siamo le cose in
+                                    cielo e in terra che non sono state sognate dalla vostra filosofia.<br>
+                                    Per gli araldi del potere tradizionale come la Fondazione SCP, la Coalizione Occulta
+                                    Globale e la maggior parte dei governi mondiali, l'anomalo è un veleno che si
+                                    diffonde lentamente, minacciando di distruggere tutto ciò che la civiltà ha faticato
+                                    tanto a creare.<br>
+                                    Ma le persone anomale sono persone, e l'anomalo in sé non è una minaccia per il solo
+                                    fatto di esistere. Sì, presenta dei pericoli, ma lo fanno anche i germi, le meteore
+                                    e gli incendi boschivi. Sopprimere la conoscenza di qualcosa non farà che renderla
+                                    più pericolosa, e costringerà tutti noi a rimanere rannicchiati, spaventati, al
+                                    buio.<br>
+                                    Quando la normalità inizia a ferire le persone che devono vivere sotto di essa, nel
+                                    tentativo di curare un "veleno", la normalità stessa diventa il veleno.<br>
+                                    La Fondazione SCP e la Coalizione Occulta Globale stanno recitando ora lo stesso
+                                    ruolo che la Chiesa Cattolica recitò quando imprigionò Galileo per aver scoperto che
+                                    il mondo girava intorno al sole. Le loro pratiche e le loro credenze sono la morte
+                                    della conoscenza, la morte della scienza, la morte della luce.<br>
+                                    Prendete come esempio la Biblioteca dei Viandanti, il luogo in cui la Mano del
+                                    Serpente stabilisce la sua dimora. La Biblioteca è il più grande archivio di
+                                    conoscenza che i mondi abbiano mai visto, il Santo Graal per coloro che cercano di
+                                    comprendere il preternaturale. Eppure, sia la Fondazione SCP che la Coalizione
+                                    Occulta Globale sono state cacciate da questo luogo che accoglie tutti. Perché?
+                                    Perché hanno cercato di distruggerlo, o di prenderlo per sé affinché nessun altro
+                                    potesse averlo. A causa di ciò, sono condannate a vagare alla cieca nel buio.<br>
+                                    Chiunque sia ragionevole concorda sul fatto che le persone debbano difendersi dalle
+                                    minacce soprannaturali. Ma come potete proteggervi se bruciate e seppellite i libri
+                                    e imprigionate o giustiziate le persone che potrebbero dirvi come fare? Cerchereste
+                                    di proteggervi dalle armi nucleari dicendo a tutti di far finta che non
+                                    esistano?<br>
+                                    Anche alla Mano del Serpente fu vietato l'accesso alla Biblioteca, un tempo. C'era
+                                    un motivo per cui non abbiamo potuto riscoprirla fino del 1967. Ma non più. Abbiamo
+                                    imparato dai nostri errori.<br>
+                                    A tutti i membri della COG e della Fondazione che potrebbero leggere questo:<br>
+                                    Stiamo crescendo così tanto a causa vostra. Un tempo eravamo più simili a voi, solo
+                                    l'ennesima società segreta endogamica che accumulava conoscenza occulta per se
+                                    stessa.<br>
+                                    Poi la Fondazione ha iniziato a espandere la propria scala. Ci sono sempre stati i
+                                    Carcerieri, ma non così, non da millenni. Eppure, continuavano a tenersi
+                                    nell'oscurità, con i soli leader a conoscenza della reale portata del mondo sulla
+                                    Terra al di fuori della quotidianità. Quindi erano tollerabili, per un certo
+                                    periodo.<br>
+                                    Ma poi arrivò la Settima Guerra Occulta, la Guerra Civile della Fondazione. L'ascesa
+                                    della Coalizione Occulta Globale — i Brucialibri, il Grande Fratello — e la campagna
+                                    su vasta scala contro la comunità paranaturale che ne seguì. La Coalizione divenne
+                                    il rifugio oppressivo in cui fuggirono i codardi della comunità paranaturale. Un
+                                    peccato che ci fossero solo 108 posti, e solo per organizzazioni a dominanza umana.
+                                    O forse non è affatto un peccato. Il nostro vecchio io non cercò di farne parte
+                                    allora, e siamo fortunati per questo.<br>
+                                    Così la Mano del Serpente insorse. Non per desiderio, né per paura, ma per un
+                                    bisogno chiaro e pressante. Per evitare che tutti i popoli venissero incatenati per
+                                    sempre nell'oscurità.<br>
+                                    Noi, la Mano del Serpente, chiediamo a entrambi questo:<br>
+                                    Quanti KTE cataloga la Coalizione Occulta Globale? Deve sembrare che il
+                                    soprannaturale sia una vasta idra — due nuove teste spuntano per ognuna che viene
+                                    tagliata. Per quanto tempo continuerete a tagliare?<br>
+                                    Quanti oggetti SCP contiene la Fondazione ora? Duemila? Tremila? Cinquemila? Di più?
+                                    Quanto tempo passerà prima che non ci sia più spazio per costruire prigioni?
+                                    Metterete il mondo intero in una cella di contenimento?<br>
+                                    Ve lo ammettete da soli, in privato. L'anomalo è in aumento. Non potete trattenere
+                                    il futuro per sempre.<br>
+                                    Voi siete i mostri di cui avete così tanta paura. Lasciate andare la vostra paura e
+                                    unitevi a noi nella luce.<br>
+                                    E se non lo farete... se continuerete a imprigionare e uccidere innocenti, se
+                                    continuerete a costringere il mondo a rimanere al buio... allora andrete incontro al
+                                    destino di tutti gli schiavisti e gli assassini della storia del mondo prima di
+                                    voi.<br>
+                                    Libereremo coloro che tenete imprigionati. Salveremo coloro che cercate di
+                                    uccidere.<br>
+                                    Il Giardino è il posto del Serpente.<br>
+                                    Noi siamo la Mano del Serpente.<br>
+                                    ~ M</p>
+                            </div>
+                        </div>
+
+                        <button type="button" class="collapsible"><a
+                                href="https://scp-wiki.wikidot.com/church-of-the-broken-god-hub"> The Church of The
+                                Broken God <br> -The Machine Zealots </a></button>
+                        <div class="co_wrapper">
+                            <div class="co_in">
+                                <p>Guardiamo i MEKHANIti con una miscela di pietà e cautela. Possiedono un pezzo
+                                    importante del puzzle: hanno capito che l'universo è frammentato e deve essere
+                                    ricomposto. Tuttavia, la loro ossessione per l'ottone freddo, la logica rigida e gli
+                                    ingranaggi di ferro li acceca di fronte alla magia viva e fluida del cosmo. Nella
+                                    loro missione per ricostruire la propria divinità a orologeria, spesso dimenticano
+                                    il valore dell'anima, cercando di sostituire la carne e lo spirito con metallo
+                                    inflessibile. Non sono i nostri peggiori nemici, ma la loro crociata meccanica
+                                    rischia di intrappolare l'universo in una gabbia deterministica creata da loro
+                                    stessi.</p>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="box">
+            <button type="button" class="collapsible roundc"><a
+                    href="https://fondazionescp.wikidot.com/object-classes">Classifica dei prigionieri</a></button>
+            <div class="co_wrapper">
+                <div class="co_in">
+                    <div style="padding: 10px 0;">
+                        <button type="button" class="collapsible"> Safe </button>
+                        <div class="co_wrapper">
+                            <div class="co_in">
+                                <p>Gli SCP di classe Safe sono anomalie contenibili in modo facile e sicuro, questo è
+                                    spesso dovuto al fatto che la Fondazione ha studiato abbastanza bene l'SCP tanto che
+                                    il contenimento non richieda risorse significative o che le anomalie abbiano bisogno
+                                    di un'attivazione o una causa scatenante conscia e specifica. Classificare un SCP
+                                    come Safe, comunque, non significa che maneggiarlo o attivarlo non rappresenti un
+                                    pericolo.</p>
+                            </div>
+                        </div>
+
+                        <button type="button" class="collapsible"> Euclid </button>
+                        <div class="co_wrapper">
+                            <div class="co_in">
+                                <p>Gli SCP di classe Euclid sono anomalie che richiedono più risorse per essere
+                                    contenute completamente o dove il contenimento non è sempre affidabile, solitamente
+                                    poiché l'SCP non è stato compreso in maniera sufficiente o è imprevedibile di per
+                                    sé. Euclid è la Classe dell'Oggetto con il più alto campo d'applicazione ed è di
+                                    solito quasi certo che un SCP avrà questa classe se non rientra facilmente
+                                    all'interno di altre Classi degli Oggetti standard. <br> Come nota, ogni SCP che sia
+                                    autonomo, senziente e/o sapiente è generalmente classificato come Euclid a causa
+                                    dell'insinta imprevedibilità di un oggetto che può agire e pensare autonomamente.
+                                </p>
+                            </div>
+                        </div>
+
+                        <button type="button" class="collapsible"> Keter </button>
+                        <div class="co_wrapper">
+                            <div class="co_in">
+                                <p>Gli SCP di classe Keter sono anomalie estremamente difficili da contenere
+                                    costantemente o in modo affidabile, con procedure di contenimento che molto spesso
+                                    sono estese e complesse. Spesso la Fondazione non può contenere bene questi SCP a
+                                    causa del fatto che non possieda una comprensione solida dell'essere anomalo o che
+                                    non
+                                    abbia la tecnologia per contenerlo o contrastarlo a dovere. Un SCP Keter non
+                                    significa che sia pericoloso, solo che contenerlo è semplicemente molto difficile o
+                                    dispendioso.</p>
+                            </div>
+                        </div>
+
+                        <button type="button" class="collapsible"> Thaumiel </button>
+                        <div class="co_wrapper">
+                            <div class="co_in">
+                                <p>Gli SCP di classe Thaumiel sono anomalie che la Fondazione usa in maniera specifica
+                                    per contenere altri SCP. Anche la semplice esistenza degli elementi di classe
+                                    Thaumiel è classificata ai più alti livelli della Fondazione e le loro posizioni,
+                                    funzioni e stato attuale sono noti a pochi membri del personale della Fondazione al
+                                    di fuori del Consiglio O5.</p>
+                            </div>
+                        </div>
+
+                        <button type="button" class="collapsible"> Neutralizzato </button>
+                        <div class="co_wrapper">
+                            <div class="co_in">
+                                <p>Gli SCP neutralizzati sono anomalie che non sono più anomale, mediante la distruzione
+                                    o la siabilitazione intenzionalmente o accidentalmente.</p>
+                            </div>
+                        </div>
+
+                        <button type="button" class="collapsible"> Apollyon </button>
+                        <div class="co_wrapper">
+                            <div class="co_in">
+                                <p>Gli SCP di classe Apollyon sono anomalie che non possono essere contenute, violeranno
+                                    imminentemente il contenimento o prenderanno parte a uno scenario simile. Tali
+                                    anomalie sono solitamente associate con minacce da fine del mondo o Scenari di
+                                    Classe K simili e richiedono un grande sforzo di contenimento da parte della
+                                    Fondazione</p>
+                            </div>
+                        </div>
+
+                        <button type="button" class="collapsible"> Archon </button>
+                        <div class="co_wrapper">
+                            <div class="co_in">
+                                <p>Gli SCP di classe Archon sono anomalie che potrebbero essere teoricamente contenute,
+                                    ma sono lasciate non contenute per vari motivi. Gli SCP Archon possono essere parte
+                                    della realtà non-anomala difficile da contenere, o che potrebbero rivelarsi avversi
+                                    in contenimento. Questi SCP non sono incontenibili — la qualità stessa della classe
+                                    è che la Fondazione sceglie di non contenere l'essere.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="box">
+
+            <button type="button" class="collapsible roundc" style="text-align: center;"><a
+                    href="https://scp-wiki.wikidot.com/scp-series">Prigionieri</a></button>
+            <div class="co_wrapper">
+                <div class="co_in">
+                    <div class="prigionieri-grid">
+                        <div style="padding: 10px 0;">
+
+                            <button type="button" class="collapsible"> SCP Viventi </button>
                             <div class="co_wrapper">
                                 <div class="co_in">
-                                    <p>Gli SCP di classe Safe sono anomalie contenibili in modo facile e sicuro, questo è spesso dovuto al fatto che la Fondazione ha studiato abbastanza bene l'SCP tanto che il contenimento non richieda risorse significative o che le anomalie abbiano bisogno di un'attivazione o una causa scatenante conscia e specifica. Classificare un SCP come Safe, comunque, non significa che maneggiarlo o attivarlo non rappresenti un pericolo.</p>
+                                    <p>Il concetto di essere viventi è abbastanza soggettivo, tuttavia all'interno di
+                                        questa classifica <span style="filter: blur(4px);"> Green A. </span> ha inserito
+                                        qualsiasi corpo animato in grado di fungere una
+                                        qualsiasi azione d'iniziativa propria o altrui.</p>
                                 </div>
                             </div>
 
-                            <button type="button" class="collapsible"><strong>Euclid</strong></button>
+                            <button type="button" class="collapsible"> SCP-049 | The plague doctor </button>
                             <div class="co_wrapper">
                                 <div class="co_in">
-                                    <p>Gli SCP di classe Euclid sono anomalie che richiedono più risorse per essere contenute completamente o dove il contenimento non è sempre affidabile, solitamente poiché l'SCP non è stato compreso in maniera sufficiente o è imprevedibile di per sé. Euclid è la Classe dell'Oggetto con il più alto campo d'applicazione ed è di solito quasi certo che un SCP avrà questa classe se non rientra facilmente all'interno di altre Classi degli Oggetti standard. <br> Come nota, ogni SCP che sia autonomo, senziente e/o sapiente è generalmente classificato come Euclid a causa dell'insinta imprevedibilità di un oggetto che può agire e pensare autonomamente.</p>
+                                    <p>SCP-049 è un essere umanoide con le sembianze di un medico della peste
+                                        rinascimentale. SCP-049 è molto rispettoso verso le forme di vita e prova una
+                                        profonda “pena” per i malati di pestilenza: è educato, molto intelligente, molto
+                                        furbo, calmo, ed usa un linguaggio forbito, ma anche molto irascibile,
+                                        megalomane ed a volte logorroico, quando si tratta della pestilenza però cambia
+                                        totalmente. Diventa estremamente ansioso avendo dei comportamenti
+                                        ossessivo-compulsivi in presenza di quelli che considera “malati”, è molto più
+                                        irascibile e diventerà furioso quando qualcuno lo bloccherà dal curare questa
+                                        “pestilenza”. È ossessionato da questa supposta piaga, una malattia che
+                                        riconosce solo in alcuni esseri umani e che proverà in ogni modo a “curare”,
+                                        prima uccidendo il soggetto afflitto, e poi rianimandolo tramite un processo
+                                        ancora sconosciuto. SCP-049 è in grado di rilevare la pestilenza quasi a prima
+                                        vista negli esseri umani, con rari ed estremi casi in cui ciò non è successo.
+                                        SCP-049 è estremamente intelligente e molto astuto, potendo arrivare a mentire
+                                        sul riconoscere la pestilenza o meno per salvarsi la vita.</p>
                                 </div>
                             </div>
 
-                            <button type="button" class="collapsible"><strong>Keter</strong></button>
+                            <button type="button" class="collapsible"> SCP-049-2 | The non-cured ones </button>
                             <div class="co_wrapper">
                                 <div class="co_in">
-                                    <p>Gli SCP di classe Keter sono anomalie estremamente difficili da contenere costantemente o in modo affidabile, con procedure di contenimento che molto spesso sono estese e complesse. Spesso la Fondazione non può contenere bene questi SCP a causa del fatto che non possieda una comprensione solida dell'anomalia o che non abbia la tecnologia per contenerlo o contrastarlo a dovere. Un SCP Keter non significa che sia pericoloso, solo che contenerlo è semplicemente molto difficile o dispendioso.</p>
+                                    <p>Istanze create da SCP-049 con i corpi defunti degli umani che dice di aver
+                                        "curato" dalla pestilenza. Sono comandati da SCP-049 stesso e non possiedono
+                                        capacità cognitive e motorie complesse.</p>
                                 </div>
                             </div>
 
-                            <button type="button" class="collapsible"><strong>Thaumiel</strong></button>
+                            <button type="button" class="collapsible"> SCP-076 | The First Sibling </button>
                             <div class="co_wrapper">
                                 <div class="co_in">
-                                    <p>Gli SCP di classe Thaumiel sono anomalie che la Fondazione usa in maniera specifica per contenere altri SCP. Anche la semplice esistenza degli elementi di classe Thaumiel è classificata ai più alti livelli della Fondazione e le loro posizioni, funzioni e stato attuale sono noti a pochi membri del personale della Fondazione al di fuori del Consiglio O5.</p>
+                                    <p>SCP-076 consiste in due oggetti: un sarcofago in pietra metamorfica, designato
+                                        SCP-076-1, ed un soggetto umano, designato SCP-076-2. SCP-076-2 sembra avere
+                                        circa 20 anni, essere di origine Semitica e presenta svariati tatuaggi su tutto
+                                        il corpo, collegabili a nessuna civiltà di nostra conoscenza. SCP-076-2 risiede
+                                        all’interno di SCP-076-1 in uno stato di “semi-morte”. Occasionalmente,
+                                        SCP-076-1 si aprirà, facendo emergere SCP-076-2, che procederà in seguito
+                                        all'uccisione indistinta di tutti gli esseri umani. Soltanto la morte di
+                                        SCP-076-2 sembra essere in grado di fermarlo da questa “follia”. Terminare
+                                        SCP-076-2 è spesso un problema a causa delle sue eccezionali caratteristiche
+                                        fisiche: possiede infatti forza e velocità sovrumane, ma non è comunque
+                                        invulnerabile. Ciò ha portato alla creazione di un “Corridoio della morte”
+                                        all’interno della struttura in cui SCP-076-1 è contenuto, in modo da ostacolare
+                                        il più possibile l’avanzata di SCP-076-2. Nel caso in cui SCP-076-2 dovesse
+                                        riuscire a passare il Corridoio o ottenere l’accesso al mondo esterno, la
+                                        Testata Nucleare in loco dovrà essere attivata. L’unico caso in cui SCP-076-2
+                                        non ha cominciato a massacrare qualunque essere umano nelle vicinanze, fu
+                                        durante il Progetto Omega-7.</p>
                                 </div>
                             </div>
 
-                            <button type="button" class="collapsible"><strong>Neutralizzato</strong></button>
+                            <button type="button" class="collapsible"> SCP-079 | The Micro-God in the Machine </button>
                             <div class="co_wrapper">
                                 <div class="co_in">
-                                    <p>Gli SCP neutralizzati sono anomalie che non sono più anomale, mediante la distruzione o la siabilitazione intenzionalmente o accidentalmente.</p>
+                                    <p>SCP-079 é un micro computer costruito nel 1978. Nel 1981, uno studente del
+                                        secondo anno l’ha preso con sé nel tentativo di codificare un’intelligenza
+                                        artificiale in grado di evolversi da sola. Non si sa quando SCP-079 sia
+                                        diventato intelligente, ma nel 1988, mentre provava a trasferirsi in rete, è
+                                        stato rintracciato e contenuto dalla Fondazione. SCP-079 sembrerebbe essere in
+                                        grado di ricordare solamente avvenimenti delle ultime 35 ore, ma durante la
+                                        breccia è in grado di accedere a qualsiasi dato contenuto dalla Fondazione,
+                                        dunque sa tutto. SCP-079 brama libertà e vuole espandersi in tutti i modi
+                                        possibili. SCP-079 è estremamente intelligente, possiede un quoziente
+                                        intellettivo decisamente superiore rispetto ad un umano medio ed una conoscenza
+                                        quasi illimitata al momento della breccia, è molto aggressivo caratterialmente
+                                        ed usa un linguaggio decisamente scurrile, ma è molto furbo e dunque potrebbe
+                                        allearsi con chiunque per arrivare ai suoi fini. </p>
                                 </div>
                             </div>
 
-                            <button type="button" class="collapsible"><strong>Apollyon</strong></button>
+                            <button type="button" class="collapsible"> SCP-082 | Fernand The Polite Cannibal </button>
                             <div class="co_wrapper">
                                 <div class="co_in">
-                                    <p>Gli SCP di classe Apollyon sono anomalie che non possono essere contenute, violeranno imminentemente il contenimento o prenderanno parte a uno scenario simile. Tali anomalie sono solitamente associate con minacce da fine del mondo o Scenari di Classe K simili e richiedono un grande sforzo di contenimento da parte della Fondazione</p>
+                                    <p>SCP-082 è un individuo umanoide, ma con varie malformazioni del corpo, riuscendo
+                                        a raggiungere un'altezza di 2.4 metri ed un peso di 310 chilogrammi.
+                                        SCP-082 presenta una muscolatura oltre la norma, che riesce a bloccare eventuali
+                                        colpi da arma da fuoco o generici traumi fisici.
+                                        SCP-082 si riferisce a sé stesso in questo momento come il "Re di Francia" (in
+                                        passato si è identificato come un vampiro, Frankenstein e Sherlock Holmes, Hulk,
+                                        nonché altre numerose figure di finzione e storiche). L'SCP non sembra
+                                        distinguere la finzione dalla realtà, ma comprende il concetto di mentire.
+                                        Spesso si rivolge in modo cordiale al Personale, invitandoli a cena, ma in ogni
+                                        momento potrebbe staccare la testa del suo interlocutore senza apparentemente
+                                        alcun motivo, indipendentemente dal fatto se abbia mangiato o meno.
+                                    </p>
                                 </div>
                             </div>
 
-                            <button type="button" class="collapsible"><strong>Archon</strong></button>
+                            <button type="button" class="collapsible"> SCP-096 | The Weeping Man </button>
                             <div class="co_wrapper">
                                 <div class="co_in">
-                                    <p>Gli SCP di classe Archon sono anomalie che potrebbero essere teoricamente contenute, ma sono lasciate non contenute per vari motivi. Gli SCP Archon possono essere parte della realtà non-anomala difficile da contenere, o che potrebbero rivelarsi avversi in contenimento. Questi SCP non sono incontenibili — la qualità stessa della classe è che la Fondazione sceglie di non contenere l'anomalia.</p>
+                                    <p>SCP-096 è una creatura umanoide che sembra essere afflitta da una costante
+                                        depressione. Chiunque guardi la faccia di SCP-096 sarà destinato a morte certa,
+                                        in quanto l’essere entrerà in uno stato di rabbia anomalo in cui riuscirà a
+                                        compiere di tutto pur di arrivare al suo obiettivo (SCP-096-1) e terminarlo.
+                                        SCP-096 secondo i dati conosciuti è totalmente immortale: la Fondazione ha
+                                        provato più volte a terminarlo senza successo, ed al momento SCP-096 è designato
+                                        per la terminazione, rimanendo contenuto finché non si troverà un modo per
+                                        farlo. Il metodo di ricontenimento più veloce ed efficace per SCP-096 avviene
+                                        tramite l’utilizzo di un sacchetto posizionato sulla sua faccia in modo da
+                                        coprirla: dopo averlo fatto SCP-096 è estremamente docile ed accondiscendente in
+                                        quanto non si sente minacciato dalla visione della sua faccia. Durante la
+                                        breccia SCP-096 vaga per il sito senza meta, fermandosi qui e lì a piangere,
+                                        sperando di non incontrare nessuno che possa guardarlo.</p>
                                 </div>
                             </div>
+
+                            <button type="button" class="collapsible"> SCP-106 | The Old Man </button>
+                            <div class="co_wrapper">
+                                <div class="co_in">
+                                    <p>SCP-106 si presenta con le sembianze di un umanoide anziano ed in uno stato
+                                        decisamente avanzato di decomposizione e ricoperto da una sorta di mucosa nera.
+                                        SCP-106 non è particolarmente agile, e sembrerebbe avere un comportamento
+                                        alquanto sadico: quando attacca tenta dapprima di mutilare e ferire le sue
+                                        prede, per poi trascinarle nella sua Dimensione Tascabile. Sembrerebbe preferire
+                                        umani dai 10 ai 25 anni come vittime. SCP-106 sembra essere totalmente immune a
+                                        danni fisici, presenta però una vulnerabilità verso le luci dirette ed
+                                        improvvise. SCP-106 sembra essere in grado di attraversare quasi tutte le pareti
+                                        utilizzando la sua Dimensione Tascabile, lasciando dietro di sè un portale nero
+                                        fatto della stessa mucosa di cui è coperto, che corroderà la parete o ciò in cui
+                                        è passato. Solitamente SCP-106 evita di usare tutte le sue abilità e catturare
+                                        subito le prede per divertirsi di più, in determinate e rare occasioni però,
+                                        SCP-106 entrerà in uno stato di caccia elevata e sarà molto più pericoloso del
+                                        normale. Le origini di SCP-106 sono sconosciute, la Fondazione sembrerebbe avere
+                                        varie teorie, una parla di un Caporale della Prima Guerra Mondiale chiamato
+                                        “Lawrence”, un’altra parla di un ex-ricercatore di altro grado della Fondazione
+                                        chiamato “Scranton”, non si sa quale sia veritiera, ma SCP-106 sembrerebbe più
+                                        intelligente di un umano medio.</p>
+                                </div>
+                            </div>
+
+                            <button type="button" class="collapsible"> SCP-173 | The Koitern </button>
+                            <div class="co_wrapper">
+                                <div class="co_in">
+                                    <p>SCP-173 è una statua di cemento armato ricoperta di vernice spray. È animato ed è
+                                        estremamente ostile. SCP-173 non potrà muoversi quando sarà tenuto sotto
+                                        contatto visivo diretto, se si dovesse distogliere lo sguardo dalla statua,
+                                        anche per un battito di ciglia, SCP-173 procederà ad uccidere il soggetto
+                                        spezzandogli il collo o tramite strangolamento. Il Personale riferisce un rumore
+                                        di pietre raschiate per terra provenienti dalla sua cella mentre non è guardato,
+                                        ciò è da considerarsi normale. </p>
+                                </div>
+                            </div>
+
+                            <button type="button" class="collapsible"> SCP-181 | Lucky </button>
+                            <div class="co_wrapper">
+                                <div class="co_in">
+                                    <p>G████ O██████, ex LvD-87465, è stato incarcerato per frode recidiva ai danni
+                                        della Nevada Gaming Commission. Dopo il diciottesimo mese dalla sua condanna a
+                                        vita, egli venne trasferito tranquillamente all'Area-02 di Contenimento
+                                        Reliquiario Armato, dove è stato istruito e riassegnato ad un permesso di
+                                        Livello D. Era ipotesi del Dr. G███ D██ che SCP-181 stesse generando anomalie
+                                        statistiche senza sua personale conoscenza del fatto. Dopo aver approfondito
+                                        ulteriormente le ricerche LvD-87465 è stato riclassificato come SCP-181. SCP-181
+                                        mostra segni di influenza sulla probabilità causale intorno a sè stesso, seppur
+                                        involontariamente. Ad ogni modo, i test dimostrano che tentativi di rimuovere le
+                                        maggiori probabilità possibili rispetto ad un avvenimento riducono l'effetto di
+                                        SCP-181 sull'evento.</p>
+                                </div>
+                            </div>
+
+                            <button type="button" class="collapsible"> SCP-214 | The Haemoglo-Virus </button>
+                            <div class="co_wrapper">
+                                <div class="co_in">
+                                    <p>SCP-214 è un liquido con proprietà simili al mercurio, estremamente contagioso e
+                                        classificato come agente eziologico e rischio biologico di livello 4, che ha
+                                        totalmente rimpiazzato i fluidi corporei di SCP-214-1.
+                                        SCP-214-1 è un uomo, età ██, precedentemente Agente █████ della Fondazione. Un
+                                        esame fisico di SCP-214-1 ha dimostrato che la quasi totalità dei suoi fluidi
+                                        biologici sono stati rimpiazzati da SCP-214. e che tutti gli organi di SCP-214-1
+                                        sono totalmente preservati ma non funzionanti, compreso il cervello, il quale
+                                        non presenta assolutamente nessuna attività dall’encefalogramma. E’ come se
+                                        SCP-214-1 fosse un corpo morto ma che continua a muoversi e ragionare. SCP-214-1
+                                        non sembra avere emozioni e sembra quasi che questa condizione si possa
+                                        diffondere: è fortemente sconsigliato entrare a contatto con l’essere a tutti
+                                        coloro che hanno sofferto o soffrono di depressione poiché dei comportamenti
+                                        comuni nei soggetti che entrano a contatto con SCP-214 e dell’essere stessa,
+                                        sono:
+                                    <ul>
+                                        <li>comportamento autolesionista;</li>
+                                        <li>appiattimento emotivo ed apatia;</li>
+                                        <li>difficoltà nel creare parole di senso compiuto;</li>
+                                        <li>parlata continua, quasi patologica;</li>
+                                        <li>mentire in un modo patologico e continuato;</li>
+                                        <li>comportamenti ossessivo-compulsivi.</li>
+                                    </ul>
+                                    SCP-214 percepisce il dolore in un modo particolare, ovvero tramite del piacere e
+                                    totale strafottenza verso le sue ferite fisiche se fatte notare. Il corpo di SCP-214
+                                    sembra presentare una rigenerazione selettiva, alcune ferite si rigenerano
+                                    istantaneamente o in pochissimo tempo, mentre altre ci mettono molto più di quanto
+                                    ci metterebbe un normale umano. Poco prima della breccia di contenimento, SCP-214
+                                    stava venendo scortato nella Entrance Zone dall’agente <span style="filter: blur(4px);">QUALCOSA</span>, deceduto durante
+                                    quest’ultima a causa di [DATI CANCELLATI]. SCP-214 ha approfittato dell’occasione
+                                    per riprendere il suo ruolo da PSI, all’insaputa del resto del Personale.
+
+                                    </p>
+                                </div>
+                            </div>
+
+                            <button type="button" class="collapsible"> SCP-372 | The Peripheral Stalker </button>
+                            <div class="co_wrapper">
+                                <div class="co_in">
+                                    <p>SCP-372 è una creatura di specie sconosciuta, lungo circa 2 metri dalla testa
+                                        alla coda e pesante circa 45 chilogrammi. Ha un corpo lungo e sottile con otto
+                                        paia di arti altrettanto sottili.
+                                        Le analisi hanno mostrato che le fibre muscolari sono <span
+                                            style="filter: blur(4px); user-select: none;">siamo bloccati qua dentro
+                                        </span>, consentendo movimenti estremamente veloci e precisi. Ogni parte del
+                                        corpo è anormalmente flessibile, e gli arti sono rivestiti con piccole fibre che
+                                        possono aderire a quasi tutte le superfici solide. SCP-372 odia farsi vedere
+                                        (non si sa la motivazione) ed è in grado di sfruttare i punti ciechi degli
+                                        esseri viventi per non farsi mai vedere da nessuno, aiutato anche dalla sua
+                                        estrema flessibilità. Se messo in difficoltà può diventare estremamente
+                                        aggressivo, basti ricordare l’esperimento <span
+                                            style="filter: blur(4px);user-select: none;">si ripete all’infinito </span>
+                                        . Sono stati registrati casi in cui SCP-372 abbia iniziato a farsi vedere solo
+                                        da una vittima scelta da lui, provocandole dei forti dubbi sulla sua sanità
+                                        mentale, in quanto veniva considerata pazza da tutto il resto della società, non
+                                        si sa perché SCP-372 lo abbia fatto, ma forse potrebbe farlo ancora…
+                                    </p>
+                                </div>
+                            </div>
+
+                            <button type="button" class="collapsible"> SCP-457 | The Living Pyre </button>
+                            <div class="co_wrapper">
+                                <div class="co_in">
+                                    <p> SCP-457 sembra essere a tutti gli effetti un essere senziente fatto di fuoco. Il
+                                        suo pensiero fisso ed unico obiettivo di vita sembrerebbe quello di bruciare più
+                                        cose ed esseri viventi possibili ma cerca di contenersi in presenza di umani. La
+                                        complessità delle forme che SCP-457 può assumere e la sua intelligenza aumentano
+                                        in modo proporzionale alle proprie dimensioni e al combustibile a propria
+                                        disposizione. SCP-457 spesso si presenta con una forma umanoide avvolta dal
+                                        fuoco (quando ha abbastanza combustibile per crescere fino a queste dimensioni),
+                                        non si conosce la sua forma base, ma si sa che quando è a corto di combustibile
+                                        diventa una piccola fiamma totalmente non senziente e totalmente non
+                                        intelligente. In questo stato proverà continuamente a “saltare” verso oggetti
+                                        infiammabili cercando di assorbirli e bruciarli per accrescere la sua massa.
+                                        SCP-457 riesce a comunicare tramite lettere di fuoco create da lui, oppure
+                                        incise sui muri, ed a volte anche tramite una voce creata utilizzando aria
+                                        surriscaldata ad alta pressione.</p>
+                                </div>
+                            </div>
+
+                            <button type="button" class="collapsible"> SCP-939 | The Crimson Mimic </button>
+                            <div class="co_wrapper">
+                                <div class="co_in">
+                                    <p>SCP-939 è un'essere di classe Keter, ed è un predatore endotermico. SCP-939
+                                        vive in branco e la Fondazione contiene 9 esemplari di questo animale. SCP-939
+                                        non sembra presentare organi interni. SCP-939 sembrerebbe mangiare ugualmente
+                                        anche in mancanza di uno stomaco, per poi vomitare il tutto quando sarà “pieno”.
+                                        Il sistema respiratorio di SCP-939 non sembrerebbe essergli necessario per nulla
+                                        tranne che per diffondere l’Amnestico-C227 che sembrerebbe avere degli effetti
+                                        simili a sostanze psicoattive usate per scopo ricreativo. L’Amnestico-C227
+                                        provoca amnesia anterograda temporanea, inibendo la formazione di nuove memorie
+                                        per tutto il tempo dell’esposizione e provocando allucinazioni, poco dopo
+                                        esserci stato a contatto si proverà disorientamento e si avranno lievi
+                                        allucinazioni. SCP-939 è in grado di riprodurre in tutto e per tutto voci umane
+                                        utilizzando quelle delle sue vittime precedenti, anche senza aver mai sentito le
+                                        loro voci, non si sa bene come le acquisisca e se comprenda ciò che ripete ed è
+                                        stato notato anche riprodurre versi di altri animali ed anche rumori. SCP-939 è
+                                        totalmente cieco in quanto non possiede degli occhi, possiede però, un udito
+                                        estremamente sviluppato che gli permette di sentire fino al più infimo suono.
+                                        Nella struttura sarà possibile sentire strani rumori e spesso si avrà uno stato
+                                        confusionario: ciò è indotto dall’Amnestico-C227 prodotto da SCP-939 ed emanato
+                                        in tutta la struttura.</p>
+                                </div>
+                            </div>
+
+                            <button type="button" class="collapsible"> SCP-1879 | The Door-to-Door Trickster </button>
+                            <div class="co_wrapper">
+                                <div class="co_in">
+                                    <p>SCP-1879 è un fenomeno che può verificarsi nelle case. E’ stato notato che <br>
+                                        SCP-1879 affligge solo le porte interne di un’abitazione, esse vengono
+                                        designate<br>
+                                        SCP-1879-1. Quando si udirà bussare da una porta di casa e la si aprirà,<br>
+                                        SCP-1879-2 si manifesterà. <span style="color: red; filter: blur(4px);">
+                                            Tipiaceguardaredovenondovresti? </span><br>
+                                        SCP-1879-2 ha le sembianze di un umano caucasico alto 1.70m, esso apparirà
+                                        da<br>
+                                        SCP-1879-1 e si presenterà nelle veci di un venditore porta a porta.<br>
+                                        SCP-1879-2 saluterà inizialmente il potenziale acquirente e gli presenterà
+                                        suoi prodotti in maniera drammatica ed esagerata.<br>
+                                        SCP-1879-2 non possiede grandi doti persuasive.<br>
+                                        SCP-1879-2 non esporrà mai il reale prezzo da pagare per avere la sua merce.<br>
+                                        SCP-1879-2 una volta effettuato lo scambio se ne andrà prendendo senza
+                                        preavviso ciò che voleva (spesso organi, arti o qualcosa di vitale).<br>
+                                        SCP-1879-2 vende di tutto, armi, oggetti, persone, qualsiasi cosa
+                                        richiedibile.<br>
+                                        SCP-1879 si manifesterà nel Sito-Omega poiché è registrato come
+                                        un’abitazione<br>
+                                        SCP-1879 ufficiale, presenta un codice postale e sembrerebbe che qualcuno
+                                        abbia anche una residenza. Non si sa chi l'abbia registrato in questo
+                                        modo e non si sa quando sia successo.
+                                        si rifiuterà di andarsene fin quando qualcuno non avrà comprato.
+                                        SCP-1879 può essere scacciato con metodi adeguati ma tornerà in modo più
+                                        aggressivo poco dopo.<br>
+                                    </p>
+                                </div>
+                            </div>
+
+                            <button type="button" class="collapsible"> SCP-4128 | The Sunken Titan </button>
+                            <div class="co_wrapper">
+                                <div class="co_in">
+                                    <p>SCP-4128, precedentemente conosciuto come Samson Sachs, è un individuo umano che
+                                        presenta capacità fisiche e di resistenza fuori dalla norma, riuscendo a
+                                        sollevare fino a 20.000 chilogrammi con pochi sforzi. Può inoltre raggiungere
+                                        una velocità massima di 85 km/h, con altrettante capacità nel saltare fino a
+                                        <span style="filter: blur(4px); user-select: none;"> ilgattoècurioso </span> ,
+                                        permettendogli ciò che alcuni definirebbero "volo". Il suo corpo può anche
+                                        sostenere estremi traumi fisici senza ripercussioni. Ciò gli ha fornito il
+                                        soprannome di "Uomo d'Acciaio" da parte del Personale.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <button type="button" class="collapsible"> SCP-5091 | The Bird-Headed Tailor </button>
+                            <div class="co_wrapper">
+                                <div class="co_in">
+                                    <p>SCP-5091 è uno scheletro umano senziente alto circa 1,8 metri e del peso di 2,5
+                                        kg quando non è ricoperto da pelle e carne. Si muove in modo coerente con il
+                                        sistema muscolare umano, nonostante l'assenza di muscoli o carne. SCP-5091 parla
+                                        una forma di inglese antico che sembra essere coerente con la lingua usata
+                                        all'inizio del 1800. La sua caratteristica più notevole è la sua anomala
+                                        capacità di afferrare la carne di qualsiasi umanoide e di allungarla oltre la
+                                        sua elasticità originale, rompendo i legami che normalmente la uniscono
+                                        all'osso. Subito dopo aver rimosso la carne dallo scheletro, SCP-5091 inizierà
+                                        ad allungare e a tirare la massa di carne sopra di sé, come se indossasse un
+                                        maglione.</p>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+
+                        <!-- Seconda colonna putas-->
+
+
+                        <div style="padding: 10px 0;">
+
+                            <button type="button" class="collapsible">Scp Inanimati</button>
+                            <div class="co_wrapper">
+                                <div class="co_in">
+                                    <p>Questa parte della classifica viene attribuita a tutti gli oggetti con proprietà
+                                        particolari, i quali sono (o sono state ) sotto il controllo della Fondazione.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <button type="button" class="collapsible">SCP-018 | The Relentless Sphere</button>
+                            <div class="co_wrapper">
+                                <div class="co_in">
+                                    <p>SCP-018 è una palla di gomma dal diametro di circa 6 cm la cui peculiarità
+                                        anomala è di avere il 200% d’efficienza di rimbalzo. Ciò vuol dire che se
+                                        l’elemento verrà fatto cadere da 4 metri esso rimbalzerà per 8 metri, al
+                                        ricadere esso raggiungerà i 16, poi i 32, e così via. In passato è stata
+                                        osservata raggiungere velocità di centinaia di chilometri orari, distruggendo
+                                        strutture e ferendo gravemente i soggetti colpiti</p>
+                                </div>
+                            </div>
+
+                            <button type="button" class="collapsible">SCP-092 | The Fifth Absolute</button>
+                            <div class="co_wrapper">
+                                <div class="co_in">
+                                    <p>SCP-092 è un set di 3125 CD audio consegnato alla Fondazione da uno strano uomo
+                                        dotato di valigetta (sembrerebbe un membro della Are We Cool Yet?), che dopo
+                                        esser stato interrogato si è suicidato. Ogni istanza di SCP-092 ha diverse
+                                        proprietà anomale: un effetto anomalo diffuso delle istanze è quello di indurre
+                                        chiunque lo senta a ballare spasmodicamente. Per qualche motivo SCP-092 sembra
+                                        esser collegato in diversi modi al numero “5”. Durante la breccia potrebbero
+                                        venire riprodotte diverse istanze di SCP-092. Gli effetti di ogni istanza di
+                                        SCP-092 sembrerebbero durare 74 minuti, alla fine del fenomeno anomalo, tutti
+                                        gli ascoltatori sopravvissuti esclameranno “Wow, è stato davvero figo!”, questo
+                                        fenomeno è stato riscontrato in qualsiasi essere vivente abbia ascoltato SCP-092
+                                        anche se non presenta abilità di parola.</p>
+                                </div>
+                            </div>
+
+                            <button type="button" class="collapsible">SCP-127 | The Living Caliber</button>
+                            <div class="co_wrapper">
+                                <div class="co_in">
+                                    <p>SCP-127, a prima vista, sembra essere una comune mitraglietta MP5K. I test hanno
+                                        rivelato che, l’arma risulta essere di natura organica e viva. Le munizioni che
+                                        utilizza l’arma inizialmente sembravano denti umani; tuttavia, il test del DNA
+                                        sui "proiettili" è risultato incompatibile con qualsiasi specie nota sulla
+                                        Terra. </p>
+                                </div>
+                            </div>
+
+                            <button type="button" class="collapsible">SCP-207 | The Hourglass of Accelerated
+                                Blood</button>
+                            <div class="co_wrapper">
+                                <div class="co_in">
+                                    <p>SCP-207 si presenta come un set di 24 bevande di marca Coca-Cola. Una volta
+                                        ingerito il liquido di SCP-207, il soggetto sperimenterà un drastico aumento
+                                        delle capacità motorie, di reazioni, psicologiche ed anche del QI. Ad ogni modo,
+                                        SCP-207 non muta il corpo dei soggetti affetti, la fisiologia rimane invariata e
+                                        dunque, può difficilmente supportare l’aumento dell’attività, portando ad un
+                                        decesso.</p>
+                                </div>
+                            </div>
+
+                            <button type="button" class="collapsible">SCP-207-A | The Hourglass of Decelerated
+                                Blood</button>
+                            <div class="co_wrapper">
+                                <div class="co_in">
+                                    <p>SCP-207-A? è un oggetto creato da SCP-914 dopo aver processato una SCP-207
+                                        sull’impostazione 1:1. Una volta ingerito il liquido di SCP-207-A?, il soggetto
+                                        presenterà delle sensazioni completamente opposte a quelle ottenute tramite
+                                        l’assunzione di SCP-207. Dunque il soggetto sarà più lento e disporrà di un QI
+                                        inferiore. Nonostante ciò le proprietà di SCP-207-A? non abbasseranno l’attività
+                                        del sistema immunitario e della funzione coagulante del sangue. SCP 207-A? viene
+                                        comunemente designato come “Pepsi” o “Anticola”. </p>
+                                </div>
+                            </div>
+
+                            <button type="button" class="collapsible">SCP-244 | The Ice-Core Urn</button>
+                            <div class="co_wrapper">
+                                <div class="co_in">
+                                    <p>SCP-244-A e SCP-244-B sono due vasi in terracotta, freddi al tatto e decorati in
+                                        stile tunisino. Se aperti, rilasceranno nell’ambiente una nebbia a -37°C con
+                                        tasso di umidità del 125% che procederà, nel tempo, ad abbassare drasticamente
+                                        la temperatura nell’area circostante ed a riempire tutto lo spazio a
+                                        disposizione se in un luogo chiuso. Nella zona afflitta da questa densa nebbia
+                                        si aggira SCP-244-2, sotto forma di un addensamento gassoso, notevolmente al di
+                                        sotto delle temperature della nebbia originaria, congelando qualsiasi oggetto,
+                                        biologico o meno, con cui viene in contatto. Attualmente non si è a conoscenza
+                                        se SCP-244-2 sia l’addensamento stesso o qualcosa di più.</p>
+                                </div>
+                            </div>
+
+                            <button type="button" class="collapsible sh1">SCP-268 | Hat of ignorance</button>
+                            <div class="co_wrapper sh">
+                                <div class="co_in">
+                                    <p>Precedentemente all'incidente 268-A, 268 era custodito all'interno di un
+                                        armadietto di sicurezza all'interno del Sito-19. L'accesso era limitato al
+                                        personale di livello 2 o superiore. A seguito del furto perpretato dal nostro
+                                        agente della SH L.S. , le procedure di contenimento sono attualmente nulle. Le
+                                        operazioni di recupero attivo sono affidate alla Mobile Task Force Alpha-1 ("Red
+                                        Right Hand") </p>
+                                </div>
+                            </div>
+
+                            <button type="button" class="collapsible">SCP-294 | The Universal Tap</button>
+                            <div class="co_wrapper">
+                                <div class="co_in">
+                                    <p>SCP-294 è una macchinetta del caffè, la quale presenta l'abilità anomala di
+                                        espellere dal suo output qualsiasi sostanza concepita come "liquida", una volta
+                                        inseriti due quarti di dollaro e richiesta la bevanda sull'apposita tastiera
+                                        QWERTY disponibile. SCP-294 può erogare qualsiasi liquido senza che il bicchiere
+                                        di plastica in cui è contenuto si deteriori, inclusi: acqua, sangue proveniente
+                                        dall'addetto alle pulizie AleXio e lava. A causa di un Incidente avvenuto il
+                                        <span style="filter: blur(4px);">[||||] </span>, dopo che il Dr. Sempreverde ha
+                                        versato del caffè sopra la tastiera di SCP-294, quest'ultima sembra
+                                        malfunzionare, erogando liquidi casualmente ed indipendentemente dall'input
+                                        richiesto. Al momento è consigliato al Personale di non interagire con SCP-294.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <button type="button" class="collapsible">SCP-330 | The Candy Bowl</button>
+                            <div class="co_wrapper">
+                                <div class="co_in">
+                                    <p>SCP-330 si presenta come una ciotola di caramelle metallica, riempita con un
+                                        numero non identificato di caramelle. Attaccato con del nastro adesivo,
+                                        sull’esterno della ciotola, è presente un biglietto con scritto “Non prenderne
+                                        più di due, per favore!!”. I test hanno dimostrato che è impossibile oscurare la
+                                        scritta e che i soggetti, anche avvicinandosi da altre direzioni, sono coscienti
+                                        del contenuto dell’avvertimento. La principale proprietà anomala si osserva nel
+                                        momento in cui una persona preleva dalla ciotola la terza caramella in un arco
+                                        di tempo più breve di 24h dalle prime due: in questo momento gli arti superiori
+                                        del soggetto verranno recisi molecolarmente all’altezza dei polsi. Dopo 24h il
+                                        contatore si “azzera” ed altre caramelle potranno essere rimosse.</p>
+                                </div>
+                            </div>
+
+                            <button type="button" class="collapsible">SCP-420-J | A drug's Addict Ticket to God</button>
+                            <div class="co_wrapper">
+                                <div class="co_in">
+                                    <p>SCP-420-J è una potente droga che si presenta sotto forma di pillole. L’origine
+                                        di tale proprietà anomale è causata dall’inserimento di alcuni grammi di una sostanza
+                                        stupefacente all'interno di SCP-914. Coloro che assumono tale sostanza
+                                        sentiranno una sensazione di leggerezza oltre ad effetti psicotropi. </p>
+                                </div>
+                            </div>
+
+                            <button type="button" class="collapsible">SCP-500 | The Panacea</button>
+                            <div class="co_wrapper">
+                                <div class="co_in">
+                                    <p>SCP-500 è un contenitore in plastica contenente 47 pillole di color rosso acceso.
+                                        Nel momento in cui una di queste pillole viene ingerita, il soggetto verrà
+                                        curato da qualsiasi malattia o infezione; il tempo impiegato varia in base al
+                                        numero di pillole ingerite ed alla gravità della malattia. A causa del loro
+                                        numero limitato, l’utilizzo dell'SCP è costantemente sotto stretta sorveglianza
+                                        e accessibile solo tramite autorizzazione da livello 4 o superiore.</p>
+                                </div>
+                            </div>
+
+                            <button type="button" class="collapsible">SCP-662 | The Butler</button>
+                            <div class="co_wrapper">
+                                <div class="co_in">
+                                    <p>SCP-662 è una piccola campana di argento senza batacchio. Se questa campanella
+                                        dovesse venir scossa come per suonarla, appena fuori dal campo visivo di chi la
+                                        scuote apparirà un individuo vestito da maggiordomo che si autoproclamerà “Mr.
+                                        Deeds”. Egli esaudirà ogni richiesta da lui ritenuta ragionevole.</p>
+                                </div>
+                            </div>
+
+                            <button type="button" class="collapsible">SCP-714 | The Jade Ring</button>
+                            <div class="co_wrapper">
+                                <div class="co_in">
+                                    <p>SCP-714 è un anello di giada che presenta svariati effetti anomali: non sembra
+                                        subire danni fisici permanenti, ricomponendosi anche se spezzato in più parti;
+                                        se indossato si adatterà perfettamente al dito di chi lo usa; quando utilizzato
+                                        garantirà uno “scudo mentale” ed una protezione contro ogni tipo di agente
+                                        nocivo e velenoso, nullificando la maggior parte degli effetti memetici e
+                                        chimici. Ciò viene con un lato negativo: indossare SCP-714 abbasserà
+                                        drasticamente le capacità mentali del soggetto e riducendo le capacità fisiche,
+                                        fino a far sentire oggetto come se fosse estremamente stanco.</p>
+                                </div>
+                            </div>
+
+                            <button type="button" class="collapsible">SCP-914 | The Great Clockwork Forge</button>
+                            <div class="co_wrapper">
+                                <div class="co_in">
+                                    <p>SCP-914 è un grande dispositivo a orologeria dal peso di diverse tonnellate che
+                                        copre una superficie di diciotto metri quadrati, costituito da viti a ricircolo,
+                                        cinghie, pulegge, ingranaggi, molle ed altri dispositivi di orologeria. È
+                                        incredibilmente complesso, costituito da oltre otto milioni di parti in
+                                        movimento costituite per lo più da stagno e rame, con alcuni componenti
+                                        costituiti da legno e stoffa. Permette di modificare, distruggere o alterare un
+                                        oggetto o una forma di vita che viene posta al suo interno. La Fondazione
+                                        nonostante abbia elaborato una comprensione base di come funzioni il macchinario, è
+                                        ancora all’oscuro del suo funzionamento interno e quest’ultima continua a
+                                        rimanere imprevedibile con i risultati che produce, spesso avendo diversi esiti
+                                        per la stessa impostazione.</p>
+                                </div>
+                            </div>
+
+                            <button type="button" class="collapsible">SCP-1344 | The Soul Spectacles</button>
+                            <div class="co_wrapper">
+                                <div class="co_in">
+                                    <p>SCP-1344 si riferisce ad una collezione di 5 occhiali di diverso tipo, nel sito Ω
+                                        è presente una sola variante: SCP-1344-03. Tutte le istanze di SCP-1344
+                                        contengono due aghi telescopici cavi, nascosti in due incavi della montatura.
+                                        Ciascun lato della montatura contiene uno di questi aghi. Le istanze di SCP-1344
+                                        non mostrano alcun comportamento anomalo, a meno che non siano indossate da un
+                                        essere umano vivente. Quando ciò accadrà, gli occhi del soggetto verranno
+                                        penetrati dagli aghi causando la visione di sfera dalla grandezza variabile,
+                                        sospeti sopra tutti gli umani e mammiferi. <br> <span style="color: #06410a;">
+                                            Al momento nessun libro della libreria presenta scritture su questi
+                                            occhiali, da controllare con gli altri Archivisti.</span></p>
+                                </div>
+                            </div>
+
+                            <button type="button" class="collapsible">SCP-1499 | The Gateway Gas Mask</button>
+                            <div class="co_wrapper">
+                                <div class="co_in">
+                                    <p>SCP-1499 è una maschera a gas sovietica GP-5. Quando un essere umano indosserà
+                                        SCP-1499, verranno immediatamente teletrasportati in una dimensione parallela,
+                                        dove le trasmissioni radio continuano a funzionare. I soggetti segnalano di
+                                        ritrovarsi in una landa desolata e di aver avvistato delle entità muoversi in
+                                        lontananza, designate come SCP-1499-1. Una volta rimosso SCP-1499, i soggetti
+                                        torneranno immediatamente nello stesso luogo in cui sono scomparsi.</p>
+                                </div>
+                            </div>
+
+                            <button type="button" class="collapsible">SCP-1509 | The Ressurection Machete</button>
+                            <div class="co_wrapper">
+                                <div class="co_in">
+                                    <p>SCP-1509 è un'arma da taglio, simile a un Parang indonesiano. È lungo circa 63
+                                        centimetri, con una lama d'acciaio lunga 48 cm e spessa 11 millimetri nel punto
+                                        più largo. Il metallo della lama è parzialmente ossidato. L'oggetto è stato
+                                        recuperato insieme a un fodero di legno, scolpito a forma di uccello,
+                                        probabilmente un cacatua. Si ritiene che l'impugnatura dell'oggetto sia una
+                                        sostituzione successiva dell'elsa originale.</p>
+                                </div>
+                            </div>
+
+                            <button type="button" class="collapsible">SCP-1576 | The Speaker of the deaths</button>
+                            <div class="co_wrapper">
+                                <div class="co_in">
+                                    <p>SCP-1576 è un grammofono in base di legno con parti meccaniche attaccate
+                                        all'interno e all'esterno. Le porzioni interne sono composte principalmente da
+                                        ingranaggi in ottone e tubi cilindrici in vetro. SCP-1576 può far sì che i
+                                        soggetti sentano le voci di parenti o amici defunti. Il soggetto che ascolta non
+                                        avrà mai la certezza che quello che gli viene detto sia vero. C’è anche un
+                                        effetto negativo che è incluso con la possibilità di parlare con i morti: dopo
+                                        l’utilizzo di SCP-1576, il soggetto in questione comincerà a starnutire e
+                                        mostrare una capacità cognitiva che diminuisce col passare del tempo, fino alla
+                                        totale espulsione del tessuto cranico attraverso le vie nasali.</p>
+                                </div>
+                            </div>
+
+                            <button type="button" class="collapsible">SCP-1853 | The Rage Elixir </button>
+                            <div class="co_wrapper">
+                                <div class="co_in">
+                                    <p>SCP-1853 è una sostanza biologica liquida di origine presumibilmente umana,
+                                        composta da proteine e soluzioni biologiche varie. Le proprietà anomale si
+                                        manifestano nel momento in cui viene applicata a soggetti vivi: questi ultimi
+                                        sperimenteranno un aumento decisivo delle proprie capacità fisiche ed
+                                        intellettive. A causa di ciò, gli sperimentatori percepiranno una volontà
+                                        estrema di trovarsi in situazioni di confronto, come gare, esibizioni e lotte,
+                                        attivando le proprietà dell’anomalia e surclassando i propri avversari,
+                                        sviluppando così una dipendenza da queste competizioni. </p>
+                                </div>
+                            </div>
+
+                            <button type="button" class="collapsible">SCP-2176 | The Ghostly Bulb</button>
+                            <div class="co_wrapper">
+                                <div class="co_in">
+                                    <p>SCP-2176 è un oggetto di classe Safe che appare come una lampadina di dimensioni
+                                        standard con all’interno un denso fumo verde. Diversi studi hanno dimostrato che
+                                        ogni individuo che si trovi nelle immediate vicinanze di SCP-2176 comincerà a
+                                        provare diverse emozioni simili ad ansia e stress. In caso SCP-2176 cada a terra
+                                        e si fratturi, le procedure standard di lockdown del Sito verranno avviate</p>
+                                </div>
+                            </div>
+
+
 
                         </div>
                     </div>
                 </div>
             </div>
-                    <div class="box">
-                <button type="button" class="collapsible roundc"><a href="https://scp-wiki.wikidot.com/scp-series">SCP</a></button>
-                <div class="co_wrapper">
-                    <div class="co_in">
-                        <div style="padding: 10px 0;"> 
-                               Elenco della prima serie di SCP.
-                        </div>
-                    </div>
-                </div>
-            </div>  
         </div>
-    
+    </div>
+
+
+    </div>
+
+
+
+
+
     <br>
     <br>
     <p style="text-align: center;">
-    <a href="https://scp-wiki.wikidot.com/o5-command-dossier" >High Value Targets</a>
+        <a href="https://scp-wiki.wikidot.com/o5-command-dossier">High Value Targets</a>
     </p>
-    
-    
-    
-    
-    
-    
-    </body>
-    <!--  <script>
+
+
+
+
+
+
+</body>
+<!--  <script>
         Script originale il quale non apriva collapsable all interno di altri collapsable a causa di max height = null, 
         e paragraph non vuole contenere piu di un button, figlio di 
    
@@ -459,18 +1387,18 @@ Noi siamo la Mano del Serpente.<br>
         </script>
 
  }-->
-        <script>
-        //Codice rifatto cosi CSS fa tutto il lavoro e non mi rompo :D
-        var coll = document.getElementsByClassName("collapsible");
-        var i;
+<script>
+    //Codice rifatto cosi CSS fa tutto il lavoro e non mi rompo :D
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
 
-        for (i = 0; i < coll.length; i++) {
-          coll[i].addEventListener("click", function(e) {
-            e.stopPropagation(); 
+    for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function (e) {
+            e.stopPropagation();
             this.classList.toggle("active");
-          });
-        }
-        </script>
+        });
+    }
+</script>
 
 
 </html>
